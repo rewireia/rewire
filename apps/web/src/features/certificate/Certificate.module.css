@@ -1,0 +1,134 @@
+.page {
+  max-width: calc(var(--content) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 40px var(--gutter) 0;
+  display: grid;
+  gap: 20px;
+}
+
+.tools {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* An A4 sheet in landscape: 297 by 210. */
+.sheet {
+  aspect-ratio: 297 / 210;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 64px);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--field-line);
+  outline: 1px solid var(--line);
+  outline-offset: -10px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-top: 12px;
+}
+
+.lead {
+  color: var(--ink-2);
+}
+
+.name {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 450;
+}
+
+.course {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  max-width: 34ch;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 40px;
+  margin: 16px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.facts div {
+  display: grid;
+  gap: 2px;
+}
+
+.facts dt {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.footer {
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+
+.footer p {
+  overflow-wrap: anywhere;
+}
+
+.demo {
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .sheet {
+    aspect-ratio: auto;
+    padding-block: 40px;
+  }
+}
+
+@page {
+  size: A4 landscape;
+  margin: 12mm;
+}
+
+@media print {
+  .page {
+    padding: 0;
+    max-width: none;
+  }
+
+  .sheet {
+    max-width: none;
+    height: 100%;
+    aspect-ratio: auto;
+    break-inside: avoid;
+  }
+}

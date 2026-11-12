@@ -1,0 +1,85 @@
+.occupation {
+  display: grid;
+  gap: 14px;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.description {
+  color: var(--ink-2);
+}
+
+.link {
+  display: grid;
+  gap: 10px;
+  padding-left: 16px;
+  border-left: 2px solid var(--accent);
+}
+
+.groupTitle {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.explain {
+  font-size: 0.94rem;
+  color: var(--ink-2);
+}
+
+.tasks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: var(--measure);
+}
+
+.tasks li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.alternatives {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.alternative {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.alternative:hover .alternativeTitle {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.alternative[aria-current='true'] {
+  cursor: default;
+}
+
+.aside {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+}

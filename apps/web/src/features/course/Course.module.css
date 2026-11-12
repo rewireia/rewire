@@ -1,0 +1,143 @@
+.back {
+  font-size: 0.94rem;
+  color: var(--ink-2);
+}
+
+.demo {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  border: 1px solid currentcolor;
+  border-radius: var(--radius);
+  color: var(--ink-2);
+}
+
+.small {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 32px;
+  margin: 0;
+}
+
+.facts div {
+  display: grid;
+  gap: 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.facts dt {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.outcomes {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+  max-width: var(--measure);
+}
+
+.ways {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px 56px;
+}
+
+.way {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.notice {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  padding: 4px 0 4px 16px;
+  border-left: 2px solid var(--accent);
+}
+
+.case {
+  display: grid;
+  gap: 12px;
+}
+
+.headline {
+  font-weight: 500;
+}
+
+.quote {
+  margin: 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--accent);
+  display: grid;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+}
+
+.quote footer {
+  font-family: var(--font-text);
+  font-size: 0.875rem;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.field input {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+@media (max-width: 860px) {
+  .ways,
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}

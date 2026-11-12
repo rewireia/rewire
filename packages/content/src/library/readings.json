@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "fed-ai-adoption-job-posting-behavior-2026",
+    "type": "note",
+    "level": "advanced",
+    "topic": "jobs",
+    "scope": "us",
+    "title": "AI Adoption and Firms' Job-Posting Behavior",
+    "source": "Board of Governors of the Federal Reserve System",
+    "year": 2026,
+    "url": "https://www.federalreserve.gov/econres/notes/feds-notes/ai-adoption-and-firms-job-posting-behavior-20260327.html",
+    "format": "web",
+    "language": "en",
+    "minutes": 14,
+    "why": {
+      "en": "It examines whether companies that adopt AI change the job offers they publish afterwards.",
+      "es": "Examina si las empresas que adoptan la IA cambian después las ofertas de empleo que publican."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "hse-regulatory-approach-ai-2026",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "wellbeing",
+    "scope": "uk",
+    "title": "HSE’s regulatory approach to artificial intelligence (AI)",
+    "source": "Health and Safety Executive",
+    "year": 2026,
+    "url": "https://press.hse.gov.uk/2026/06/12/hses-regulatory-approach-to-artificial-intelligence-ai/",
+    "format": "web",
+    "language": "en",
+    "minutes": 5,
+    "why": {
+      "en": "It explains that health and safety law also covers AI at work and what employers must assess.",
+      "es": "Explica que la ley de seguridad y salud laboral también alcanza a la IA en el trabajo y qué deben evaluar las empresas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "worldbank-wdr-2026-promise-of-ai",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "policy",
+    "scope": "global",
+    "title": "WDR 2026: The Promise of Artificial Intelligence",
+    "source": "World Bank",
+    "year": 2026,
+    "url": "https://www.worldbank.org/en/publication/wdr2026",
+    "format": "web",
+    "language": "en",
+    "minutes": 10,
+    "why": {
+      "en": "It presents the World Bank's view of how AI could support development and work in poorer economies.",
+      "es": "Presenta la visión del Banco Mundial sobre cómo la IA podría apoyar el desarrollo y el empleo en las economías con menos recursos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "acas-workers-worry-ai-job-losses-2025",
+    "type": "note",
+    "level": "introductory",
+    "topic": "wellbeing",
+    "scope": "uk",
+    "title": "1 in 4 workers worry that AI will lead to job losses",
+    "source": "Acas",
+    "year": 2025,
+    "url": "https://www.acas.org.uk/1-in-4-workers-worry-that-ai-will-lead-to-job-losses",
+    "format": "web",
+    "language": "en",
+    "minutes": 2,
+    "why": {
+      "en": "It describes the main worries workers have about AI and the advice the workplace conciliation service gives in response.",
+      "es": "Describe las principales preocupaciones de las personas trabajadoras ante la IA y los consejos que da el servicio de conciliación laboral."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "nyfed-businesses-hiring-due-to-ai-2025",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "jobs",
+    "scope": "us",
+    "title": "Are Businesses Scaling Back Hiring Due to AI?",
+    "source": "Federal Reserve Bank of New York",
+    "year": 2025,
+    "url": "https://libertystreeteconomics.newyorkfed.org/2025/09/are-businesses-scaling-back-hiring-due-to-ai/",
+    "format": "web",
+    "language": "en",
+    "minutes": 8,
+    "why": {
+      "en": "It looks at whether firms using AI are hiring fewer people or retraining the ones they have.",
+      "es": "Analiza si las empresas que usan IA contratan a menos gente o forman de nuevo a la que ya tienen."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "skills-england-ai-skills-gap-2025",
+    "type": "note",
+    "level": "introductory",
+    "topic": "policy",
+    "scope": "uk",
+    "title": "Help for UK businesses to fill £400bn AI skills gap",
+    "source": "Skills England",
+    "year": 2025,
+    "url": "https://www.gov.uk/government/news/help-for-uk-businesses-to-fill-400bn-ai-skills-gap",
+    "format": "web",
+    "language": "en",
+    "minutes": 6,
+    "why": {
+      "en": "It announces public tools to help businesses train their staff in AI and explains who they are for.",
+      "es": "Anuncia herramientas públicas para ayudar a las empresas a formar a su plantilla en IA y explica a quién van dirigidas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "fed-measuring-ai-uptake-workplace-2025",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "learning",
+    "scope": "us",
+    "title": "Measuring AI Uptake in the Workplace",
+    "source": "Board of Governors of the Federal Reserve System",
+    "year": 2025,
+    "url": "https://www.federalreserve.gov/econres/notes/feds-notes/measuring-ai-uptake-in-the-workplace-20240205.html",
+    "format": "web",
+    "language": "en",
+    "minutes": 14,
+    "why": {
+      "en": "It compares different surveys on AI use at work and explains why their answers do not always match.",
+      "es": "Compara distintas encuestas sobre el uso de la IA en el trabajo y explica por qué sus resultados no siempre coinciden."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "acas-employers-ai-productivity-2025",
+    "type": "note",
+    "level": "introductory",
+    "topic": "rights",
+    "scope": "uk",
+    "title": "One third of employers think AI will increase productivity",
+    "source": "Acas",
+    "year": 2025,
+    "url": "https://www.acas.org.uk/one-third-of-employers-think-ai-will-increase-productivity",
+    "format": "web",
+    "language": "en",
+    "minutes": 2,
+    "why": {
+      "en": "It recommends that employers agree clear rules on AI and talk to staff before introducing it.",
+      "es": "Recomienda que las empresas acuerden normas claras sobre la IA y hablen con la plantilla antes de introducirla."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "worldbank-ai-jobs-latin-america-2025",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "jobs",
+    "scope": "global",
+    "title": "Quantifying the Jobs Potential of AI in Latin America and the Caribbean",
+    "source": "World Bank",
+    "year": 2025,
+    "url": "https://www.worldbank.org/en/results/2025/04/15/quantifying-the-jobs-potential-of-ai-in-latin-america-and-the-caribbean",
+    "format": "web",
+    "language": "en",
+    "minutes": 4,
+    "why": {
+      "en": "It shows how exposure to generative AI depends on the kind of work people do and on access to digital tools.",
+      "es": "Muestra cómo la exposición a la IA generativa depende del tipo de trabajo y del acceso a herramientas digitales."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "stlouisfed-generative-ai-work-productivity-2025",
+    "type": "note",
+    "level": "introductory",
+    "topic": "jobs",
+    "scope": "us",
+    "title": "The Impact of Generative AI on Work Productivity",
+    "source": "Federal Reserve Bank of St. Louis",
+    "year": 2025,
+    "url": "https://www.stlouisfed.org/on-the-economy/2025/feb/impact-generative-ai-work-productivity",
+    "format": "web",
+    "language": "en",
+    "minutes": 7,
+    "why": {
+      "en": "It offers a short, clear look at how much time workers say they save when they use generative AI.",
+      "es": "Ofrece una mirada breve y clara a cuánto tiempo dicen ahorrar las personas trabajadoras cuando usan IA generativa."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "crs-macroeconomic-effects-ai-2025",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "policy",
+    "scope": "us",
+    "title": "The Macroeconomic Effects of Artificial Intelligence",
+    "source": "Congressional Research Service",
+    "year": 2025,
+    "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12762/IF12762.3.pdf",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 8,
+    "why": {
+      "en": "It is a brief prepared for legislators that explains how AI could affect productivity, wages and inequality.",
+      "es": "Es una nota preparada para legisladores que explica cómo podría afectar la IA a la productividad, los salarios y la desigualdad."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "pew-workers-worried-ai-workplace-2025",
+    "type": "note",
+    "level": "introductory",
+    "topic": "wellbeing",
+    "scope": "us",
+    "title": "U.S. Workers Are More Worried Than Hopeful About Future AI Use in the Workplace",
+    "source": "Pew Research Center",
+    "year": 2025,
+    "url": "https://www.pewresearch.org/social-trends/2025/02/25/u-s-workers-are-more-worried-than-hopeful-about-future-ai-use-in-the-workplace/",
+    "format": "web",
+    "language": "en",
+    "minutes": 6,
+    "why": {
+      "en": "It shows how workers feel about AI arriving in their jobs, which can help you put your own doubts in context.",
+      "es": "Muestra cómo viven las personas trabajadoras la llegada de la IA a su empleo, lo que ayuda a situar tus propias dudas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "eurostat-ai-use-in-enterprises-2025",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "jobs",
+    "scope": "eu",
+    "title": "Use of artificial intelligence in enterprises",
+    "source": "Eurostat",
+    "year": 2025,
+    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises",
+    "format": "web",
+    "language": "en",
+    "minutes": 14,
+    "why": {
+      "en": "It gives an official picture of which European companies already use AI and for what purposes.",
+      "es": "Ofrece una imagen oficial de qué empresas europeas usan ya la IA y para qué."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-ai-act-overview-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "policy",
+    "scope": "eu",
+    "title": "AI Act",
+    "source": "European Commission",
+    "year": 2024,
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "format": "web",
+    "language": "en",
+    "minutes": 11,
+    "why": {
+      "en": "A plain overview of the European AI law, its risk levels and the dates when each part applies.",
+      "es": "Una visión general sencilla de la ley europea de IA, sus niveles de riesgo y las fechas en que se aplica cada parte."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "unesco-ai-competency-framework-students-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "global",
+    "title": "AI competency framework for students",
+    "source": "UNESCO",
+    "year": 2024,
+    "url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+    "format": "web",
+    "language": "en",
+    "minutes": 2,
+    "why": {
+      "en": "It outlines what a person should understand and be able to do to use AI with judgement.",
+      "es": "Resume lo que una persona debería entender y saber hacer para usar la IA con criterio."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "unesco-ai-competency-framework-teachers-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "global",
+    "title": "AI competency framework for teachers",
+    "source": "UNESCO",
+    "year": 2024,
+    "url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+    "format": "web",
+    "language": "en",
+    "minutes": 3,
+    "why": {
+      "en": "Useful for anyone who trains others and wants a clear map of the AI skills worth teaching.",
+      "es": "Útil para quien forma a otras personas y quiere un mapa claro de las competencias en IA que conviene enseñar."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "jrc-algorithmic-management-digital-monitoring-2024",
+    "type": "note",
+    "level": "intermediate",
+    "topic": "rights",
+    "scope": "eu",
+    "title": "Algorithmic management and digital monitoring of work",
+    "source": "European Commission, Joint Research Centre",
+    "year": 2024,
+    "url": "https://joint-research-centre.ec.europa.eu/scientific-activities/employment/algorithmic-management-and-digital-monitoring-work_en",
+    "format": "web",
+    "language": "en",
+    "minutes": 6,
+    "why": {
+      "en": "It summarises the Commission's research on workplace monitoring and points to the studies behind it.",
+      "es": "Resume la investigación de la Comisión sobre la vigilancia en el trabajo y enlaza los estudios en que se basa."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ilo-algorithmic-management-already-reality-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "rights",
+    "scope": "global",
+    "title": "Algorithmic management practices in regular workplaces are already a reality",
+    "source": "International Labour Organization",
+    "year": 2024,
+    "url": "https://www.ilo.org/resource/news/algorithmic-management-practices-regular-workplaces-are-already-reality",
+    "format": "web",
+    "language": "en",
+    "minutes": 3,
+    "why": {
+      "en": "It explains in plain terms how software already assigns, monitors and evaluates work in ordinary jobs.",
+      "es": "Explica con sencillez cómo el software ya reparte, vigila y evalúa el trabajo en empleos corrientes."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "unwomen-ai-gender-equality-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "fairness",
+    "scope": "global",
+    "title": "Artificial Intelligence and gender equality",
+    "source": "UN Women",
+    "year": 2024,
+    "url": "https://www.unwomen.org/en/articles/explainer/artificial-intelligence-and-gender-equality",
+    "format": "web",
+    "language": "en",
+    "minutes": 7,
+    "why": {
+      "en": "It explains how bias can enter AI systems and what that can mean for women at work.",
+      "es": "Explica cómo pueden entrar sesgos en los sistemas de IA y qué puede suponer para las mujeres en el trabajo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "unesco-genai-gender-stereotypes-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "fairness",
+    "scope": "global",
+    "title": "Generative AI: UNESCO study reveals alarming evidence of regressive gender stereotypes",
+    "source": "UNESCO",
+    "year": 2024,
+    "url": "https://www.unesco.org/en/articles/generative-ai-unesco-study-reveals-alarming-evidence-regressive-gender-stereotypes",
+    "format": "web",
+    "language": "en",
+    "minutes": 6,
+    "why": {
+      "en": "A quick way to understand how chatbots can repeat gender stereotypes about jobs and roles.",
+      "es": "Una forma rápida de entender cómo los asistentes conversacionales pueden repetir estereotipos de género sobre empleos y papeles."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ico-intervention-ai-recruitment-tools-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "fairness",
+    "scope": "uk",
+    "title": "ICO intervention into AI recruitment tools leads to better data protection for job seekers",
+    "source": "Information Commissioner's Office",
+    "year": 2024,
+    "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/ico-intervention-into-ai-recruitment-tools-leads-to-better-data-protection-for-job-seekers",
+    "format": "web",
+    "language": "en",
+    "minutes": 3,
+    "why": {
+      "en": "It summarises, in a few minutes, what the regulator asked AI recruitment providers to change to protect candidates.",
+      "es": "Resume en pocos minutos qué pidió cambiar la autoridad de protección de datos a los proveedores de IA para selección de personal."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "oecd-ai-principles-overview-2024",
+    "type": "note",
+    "level": "introductory",
+    "topic": "policy",
+    "scope": "global",
+    "title": "OECD AI Principles overview",
+    "source": "OECD",
+    "year": 2024,
+    "url": "https://oecd.ai/en/ai-principles",
+    "format": "web",
+    "language": "en",
+    "minutes": 4,
+    "why": {
+      "en": "It sets out the shared principles many governments use as a reference when they regulate AI.",
+      "es": "Expone los principios comunes que muchos gobiernos toman como referencia al regular la IA."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "mit-sloan-generative-ai-skilled-workers-2023",
+    "type": "note",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "us",
+    "title": "How generative AI can boost highly skilled workers’ productivity",
+    "source": "MIT Sloan School of Management",
+    "year": 2023,
+    "url": "https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity",
+    "format": "web",
+    "language": "en",
+    "minutes": 6,
+    "why": {
+      "en": "It explains, with a field experiment, that AI helps on some tasks and harms on others, so knowing when to rely on it matters.",
+      "es": "Explica, a partir de un experimento real, que la IA ayuda en unas tareas y perjudica en otras, así que importa saber cuándo fiarse de ella."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ons-ai-uptake-sentiment-uk-2023",
+    "type": "note",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "uk",
+    "title": "Understanding AI uptake and sentiment among people and businesses in the UK: June 2023",
+    "source": "Office for National Statistics",
+    "year": 2023,
+    "url": "https://www.ons.gov.uk/businessindustryandtrade/itandinternetindustry/articles/understandingaiuptakeandsentimentamongpeopleandbusinessesintheuk/june2023",
+    "format": "web",
+    "language": "en",
+    "minutes": 15,
+    "why": {
+      "en": "It describes how familiar people and businesses were with AI when generative tools became popular, and how they felt about it.",
+      "es": "Describe cuánto conocían la IA las personas y las empresas cuando se popularizaron las herramientas generativas, y qué opinaban de ella."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "pew-workers-exposed-to-ai-2023",
+    "type": "note",
+    "level": "introductory",
+    "topic": "jobs",
+    "scope": "us",
+    "title": "Which U.S. Workers Are More Exposed to AI on Their Jobs?",
+    "source": "Pew Research Center",
+    "year": 2023,
+    "url": "https://www.pewresearch.org/social-trends/2023/07/26/which-u-s-workers-are-more-exposed-to-ai-on-their-jobs/",
+    "format": "web",
+    "language": "en",
+    "minutes": 15,
+    "why": {
+      "en": "It explains which kinds of jobs and tasks are most in contact with AI, so you can think about how your own role might change.",
+      "es": "Explica qué tipos de empleos y tareas tienen más contacto con la IA, para que pienses cómo podría cambiar tu propio puesto."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-ai-literacy-questions-answers-2026",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "eu",
+    "title": "AI Literacy - Questions & Answers",
+    "source": "European Commission",
+    "year": 2026,
+    "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+    "format": "web",
+    "language": "en",
+    "minutes": 24,
+    "why": {
+      "en": "It explains what the duty to build AI literacy means for employers and staff in practice.",
+      "es": "Explica qué supone en la práctica la obligación de alfabetización en IA para empresas y plantillas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "microsoft-copilot-writing-prompts-2026",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "global",
+    "title": "Get started writing prompts in Microsoft Copilot",
+    "source": "Microsoft",
+    "year": 2026,
+    "url": "https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5",
+    "format": "web",
+    "language": "en",
+    "minutes": 4,
+    "why": {
+      "en": "It shows how to write a clear request to an AI assistant by stating the goal, the context and the expected format.",
+      "es": "Enseña a escribir una petición clara a un asistente de IA indicando el objetivo, el contexto y el formato esperado."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-navigating-the-ai-act-2026",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "rights",
+    "scope": "eu",
+    "title": "Navigating the AI Act",
+    "source": "European Commission",
+    "year": 2026,
+    "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+    "format": "web",
+    "language": "en",
+    "minutes": 27,
+    "why": {
+      "en": "Official answers to common questions about who must comply with the AI Act and how.",
+      "es": "Respuestas oficiales a preguntas frecuentes sobre quién debe cumplir la ley europea de IA y cómo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "dol-ai-literacy-framework-2026",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "us",
+    "title": "The U.S. Department of Labor’s Artificial Intelligence Literacy Framework",
+    "source": "U.S. Department of Labor",
+    "year": 2026,
+    "url": "https://www.dol.gov/agencies/eta/advisories/ten-07-25",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 28,
+    "why": {
+      "en": "It describes the basic skills a worker needs to use AI with judgement, from giving clear instructions to checking what it produces.",
+      "es": "Describe las competencias básicas que necesita una persona trabajadora para usar la IA con criterio, desde dar instrucciones claras hasta revisar lo que produce."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ico-what-is-automated-decision-making-2026",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "rights",
+    "scope": "uk",
+    "title": "What is ADM?",
+    "source": "Information Commissioner's Office",
+    "year": 2026,
+    "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/automated-decision-making/what-is-adm/",
+    "format": "web",
+    "language": "en",
+    "minutes": 9,
+    "why": {
+      "en": "It explains what counts as an automated decision about a person and which protections the law gives you.",
+      "es": "Explica qué se considera una decisión automatizada sobre una persona y qué protecciones te da la ley."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "uk-ai-playbook-government-2025",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "uk",
+    "title": "AI Playbook for the UK Government",
+    "source": "Government Digital Service",
+    "year": 2025,
+    "url": "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 295,
+    "why": {
+      "en": "It sets out principles for using AI safely and lawfully in public organisations, many of which apply to any workplace.",
+      "es": "Recoge principios para usar la IA de forma segura y legal en organizaciones públicas, muchos de ellos aplicables a cualquier lugar de trabajo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "edpb-ai-privacy-risks-llms-2025",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "rights",
+    "scope": "eu",
+    "title": "AI Privacy Risks & Mitigations Large Language Models (LLMs)",
+    "source": "European Data Protection Board",
+    "year": 2025,
+    "url": "https://www.edpb.europa.eu/documents/support-pool-of-experts/ai-privacy-risks-mitigations-large-language-models-llms_en",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 255,
+    "why": {
+      "en": "It explains how personal data can be exposed when language models are used and how to reduce that risk.",
+      "es": "Explica cómo pueden quedar expuestos los datos personales al usar modelos de lenguaje y cómo reducir ese riesgo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "skills-england-ai-skills-tools-package-2025",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "learning",
+    "scope": "uk",
+    "title": "AI skills tools package",
+    "source": "Skills England",
+    "year": 2025,
+    "url": "https://www.gov.uk/government/publications/ai-skills-for-the-uk-workforce/ai-skills-tools-package",
+    "format": "web",
+    "language": "en",
+    "minutes": 19,
+    "why": {
+      "en": "It offers a skills framework and a checklist to plan AI training in a team, which you can also use to map your own learning.",
+      "es": "Ofrece un marco de competencias y una lista de comprobación para planificar la formación en IA de un equipo, que también sirve para orientar tu propio aprendizaje."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-guidelines-prohibited-ai-practices-2025",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "rights",
+    "scope": "eu",
+    "title": "Commission publishes the Guidelines on prohibited artificial intelligence (AI) practices, as defined by the AI Act.",
+    "source": "European Commission",
+    "year": 2025,
+    "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 363,
+    "why": {
+      "en": "It details which uses of AI are banned in Europe, including some that affect people at work.",
+      "es": "Detalla qué usos de la IA están prohibidos en Europa, entre ellos algunos que afectan a las personas en el trabajo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "dfe-generative-ai-in-education-2025",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "uk",
+    "title": "Generative artificial intelligence (AI) in education",
+    "source": "Department for Education",
+    "year": 2025,
+    "url": "https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education/generative-artificial-intelligence-ai-in-education",
+    "format": "web",
+    "language": "en",
+    "minutes": 14,
+    "why": {
+      "en": "It sets out how teachers and other education staff can use generative AI responsibly, with ideas that carry over to other jobs.",
+      "es": "Expone cómo puede usar el profesorado y el resto del personal educativo la IA generativa de forma responsable, con ideas trasladables a otros empleos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "etuc-negotiating-the-algorithm-2025",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "rights",
+    "scope": "eu",
+    "title": "Negotiating the Algorithm - Trade union manual",
+    "source": "European Trade Union Confederation",
+    "year": 2025,
+    "url": "https://www.etuc.org/en/publication/negotiating-algorithm-trade-union-manual",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 190,
+    "why": {
+      "en": "A practical manual on how workers and their representatives can negotiate the use of algorithms at work.",
+      "es": "Un manual práctico sobre cómo las personas trabajadoras y sus representantes pueden negociar el uso de algoritmos en el trabajo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-guidelines-ai-system-definition-2025",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "eu",
+    "title": "The Commission publishes guidelines on AI system definition to facilitate the first AI Act’s rules application",
+    "source": "European Commission",
+    "year": 2025,
+    "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 33,
+    "why": {
+      "en": "It helps you tell whether a tool used at your workplace counts as an AI system under European law.",
+      "es": "Te ayuda a saber si una herramienta que se usa en tu trabajo cuenta como sistema de IA según la ley europea."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "euosha-towards-ai-worker-management-safer-workplaces-2025",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "wellbeing",
+    "scope": "eu",
+    "title": "Towards AI-based and algorithmic worker management systems for more productive, safer and healthier workplaces",
+    "source": "European Agency for Safety and Health at Work",
+    "year": 2025,
+    "url": "https://osha.europa.eu/en/publications/towards-ai-based-and-algorithmic-worker-management-systems-more-productive-safer-and-healthier-workplaces",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 10,
+    "why": {
+      "en": "A short sheet with practical points for using AI to manage work without harming health and safety.",
+      "es": "Una hoja breve con pautas prácticas para usar la IA en la gestión del trabajo sin perjudicar la salud y la seguridad."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ncsc-ai-and-cyber-security-2024",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "learning",
+    "scope": "uk",
+    "title": "AI and cyber security: what you need to know",
+    "source": "National Cyber Security Centre",
+    "year": 2024,
+    "url": "https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know",
+    "format": "web",
+    "language": "en",
+    "minutes": 9,
+    "why": {
+      "en": "It explains in plain language the security risks of using AI tools at work and how to avoid sharing what you should not.",
+      "es": "Explica en lenguaje sencillo los riesgos de seguridad de usar herramientas de IA en el trabajo y cómo evitar compartir lo que no se debe."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "edpb-ai-auditing-checklist-2024",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "fairness",
+    "scope": "eu",
+    "title": "AI Auditing",
+    "source": "European Data Protection Board",
+    "year": 2024,
+    "url": "https://www.edpb.europa.eu/documents/support-pool-of-experts/ai-auditing_en",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 53,
+    "why": {
+      "en": "It offers a checklist for reviewing whether an AI system treats people fairly and respects their data.",
+      "es": "Ofrece una lista de comprobación para revisar si un sistema de IA trata a las personas con equidad y respeta sus datos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "nist-ai-rmf-generative-ai-profile-2024",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "us",
+    "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+    "source": "National Institute of Standards and Technology",
+    "year": 2024,
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 160,
+    "why": {
+      "en": "It lists the specific risks of generative AI, such as invented content or data leaks, and the actions organisations can take to reduce them.",
+      "es": "Enumera los riesgos propios de la IA generativa, como el contenido inventado o la fuga de datos, y las medidas que pueden tomar las organizaciones para reducirlos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "uk-introduction-to-ai-assurance-2024",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "policy",
+    "scope": "uk",
+    "title": "Introduction to AI assurance",
+    "source": "Department for Science, Innovation and Technology",
+    "year": 2024,
+    "url": "https://www.gov.uk/government/publications/introduction-to-ai-assurance",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 110,
+    "why": {
+      "en": "It explains how organisations can check that the AI they use is trustworthy, which is useful if you take part in those decisions.",
+      "es": "Explica cómo pueden comprobar las organizaciones que la IA que usan es fiable, algo útil si participas en esas decisiones."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "uk-responsible-ai-in-recruitment-2024",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "fairness",
+    "scope": "uk",
+    "title": "Responsible AI in Recruitment guide",
+    "source": "Department for Science, Innovation and Technology",
+    "year": 2024,
+    "url": "https://www.gov.uk/government/publications/responsible-ai-in-recruitment-guide",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 123,
+    "why": {
+      "en": "It explains the checks an employer should make before using AI to select staff, which also tells candidates what to expect.",
+      "es": "Explica las comprobaciones que debe hacer una empresa antes de usar la IA para seleccionar personal, lo que también orienta a quien busca empleo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ico-using-ai-in-recruitment-considerations-2024",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "rights",
+    "scope": "uk",
+    "title": "Thinking of using AI to assist recruitment? Our key data protection considerations",
+    "source": "Information Commissioner's Office",
+    "year": 2024,
+    "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/11/thinking-of-using-ai-to-assist-recruitment-our-key-data-protection-considerations",
+    "format": "web",
+    "language": "en",
+    "minutes": 4,
+    "why": {
+      "en": "It lists the questions an organisation should ask an AI recruitment provider, which also shows candidates what they can demand.",
+      "es": "Enumera las preguntas que una organización debe hacer a un proveedor de IA para selección, lo que también muestra a los candidatos qué pueden exigir."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "nist-ai-risk-management-framework-2023",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "us",
+    "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+    "source": "National Institute of Standards and Technology",
+    "year": 2023,
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 120,
+    "why": {
+      "en": "It sets out a shared vocabulary for spotting and managing the risks of AI systems, which helps when your organisation decides how to adopt them.",
+      "es": "Ofrece un vocabulario común para detectar y gestionar los riesgos de los sistemas de IA, útil cuando tu organización decide cómo adoptarlos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ifow-good-work-algorithmic-impact-assessment-2023",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "rights",
+    "scope": "uk",
+    "title": "Good Work Algorithmic Impact Assessment",
+    "source": "Institute for the Future of Work",
+    "year": 2023,
+    "url": "https://www.ifow.org/publications/good-work-algorithmic-impact-assessment-an-approach-for-worker-involvement",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 135,
+    "why": {
+      "en": "It proposes a step-by-step method for assessing how an algorithmic system affects jobs, with workers involved from the start.",
+      "es": "Propone un método paso a paso para evaluar cómo afecta un sistema algorítmico al trabajo, con la participación de la plantilla desde el principio."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ico-ai-fairness-bias-discrimination-2023",
+    "type": "guide",
+    "level": "advanced",
+    "topic": "fairness",
+    "scope": "uk",
+    "title": "What about fairness, bias and discrimination?",
+    "source": "Information Commissioner's Office",
+    "year": 2023,
+    "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-fairness-in-ai/what-about-fairness-bias-and-discrimination/",
+    "format": "web",
+    "language": "en",
+    "minutes": 27,
+    "why": {
+      "en": "It explains how data protection and equality law apply when an AI system treats groups of people differently.",
+      "es": "Explica cómo se aplican la protección de datos y la ley de igualdad cuando un sistema de IA trata de forma distinta a grupos de personas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "unesco-recommendation-ethics-ai-2021",
+    "type": "guide",
+    "level": "introductory",
+    "topic": "policy",
+    "scope": "global",
+    "title": "Recommendation on the Ethics of Artificial Intelligence",
+    "source": "UNESCO",
+    "year": 2021,
+    "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "format": "web",
+    "language": "en",
+    "minutes": 5,
+    "why": {
+      "en": "It presents the global ethical standard on AI that countries agreed to, with its values and areas of action.",
+      "es": "Presenta la norma ética mundial sobre IA que acordaron los países, con sus valores y ámbitos de actuación."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-altai-self-assessment-2020",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "fairness",
+    "scope": "eu",
+    "title": "Assessment List for Trustworthy Artificial Intelligence (ALTAI) for self-assessment",
+    "source": "European Commission, High-Level Expert Group on AI",
+    "year": 2020,
+    "url": "https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 85,
+    "why": {
+      "en": "A list of questions a team can work through to check an AI tool before relying on it.",
+      "es": "Una lista de preguntas que un equipo puede repasar para revisar una herramienta de IA antes de confiar en ella."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ec-ethics-guidelines-trustworthy-ai-2019",
+    "type": "guide",
+    "level": "intermediate",
+    "topic": "fairness",
+    "scope": "eu",
+    "title": "Ethics guidelines for trustworthy AI",
+    "source": "European Commission, High-Level Expert Group on AI",
+    "year": 2019,
+    "url": "https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 103,
+    "why": {
+      "en": "It describes the conditions an AI system should meet to be fair, transparent and under human control.",
+      "es": "Describe las condiciones que debería cumplir un sistema de IA para ser justo, transparente y estar bajo control humano."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ons-ai-in-uk-businesses-2023-to-2026",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "jobs",
+    "scope": "uk",
+    "title": "Artificial intelligence in UK businesses: 2023 to 2026",
+    "source": "Office for National Statistics",
+    "year": 2026,
+    "url": "https://www.ons.gov.uk/businessindustryandtrade/business/businessservices/articles/artificialintelligenceinukbusinesses/2023to2026",
+    "format": "web",
+    "language": "en",
+    "minutes": 21,
+    "why": {
+      "en": "It tracks how British firms have taken up AI over several years and what that has meant for their workforce.",
+      "es": "Sigue cómo las empresas británicas han incorporado la IA a lo largo de varios años y qué ha supuesto para su plantilla."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "uk-ai-opportunities-action-plan-2025",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "policy",
+    "scope": "uk",
+    "title": "AI Opportunities Action Plan",
+    "source": "Department for Science, Innovation and Technology",
+    "year": 2025,
+    "url": "https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan",
+    "format": "web",
+    "language": "en",
+    "minutes": 36,
+    "why": {
+      "en": "It is the UK government's plan for AI, including what it intends to do on skills and public services.",
+      "es": "Es el plan del Gobierno británico para la IA, incluido lo que piensa hacer en competencias y servicios públicos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "gao-generative-ai-federal-agencies-2025",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "policy",
+    "scope": "us",
+    "title": "Artificial Intelligence: Generative AI Use and Management at Federal Agencies",
+    "source": "U.S. Government Accountability Office",
+    "year": 2025,
+    "url": "https://www.gao.gov/products/gao-25-107653",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 88,
+    "why": {
+      "en": "It shows how large public employers are bringing generative AI into daily work and which obstacles they meet along the way.",
+      "es": "Muestra cómo grandes empleadores públicos incorporan la IA generativa al trabajo diario y qué obstáculos encuentran por el camino."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ilo-genai-jobs-refined-global-index-2025",
+    "type": "report",
+    "level": "advanced",
+    "topic": "jobs",
+    "scope": "global",
+    "title": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+    "source": "International Labour Organization",
+    "year": 2025,
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 190,
+    "why": {
+      "en": "It lets you look up how exposed different occupations are to generative AI, task by task.",
+      "es": "Permite consultar cuánto se exponen distintas ocupaciones a la IA generativa, tarea por tarea."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "jrc-generative-ai-outlook-report-2025",
+    "type": "report",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "eu",
+    "title": "Generative AI Outlook Report",
+    "source": "European Commission, Joint Research Centre",
+    "year": 2025,
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC142598",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 418,
+    "why": {
+      "en": "It brings together the Commission's research on what generative AI means for the economy, work and society.",
+      "es": "Reúne la investigación de la Comisión sobre lo que supone la IA generativa para la economía, el trabajo y la sociedad."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "bls-ai-impacts-employment-projections-2025",
+    "type": "report",
+    "level": "advanced",
+    "topic": "jobs",
+    "scope": "us",
+    "title": "Incorporating AI impacts in BLS employment projections: occupational case studies",
+    "source": "U.S. Bureau of Labor Statistics",
+    "year": 2025,
+    "url": "https://www.bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm",
+    "format": "web",
+    "language": "en",
+    "minutes": 28,
+    "why": {
+      "en": "It explains how official labour statisticians account for AI when they project the future of specific occupations.",
+      "es": "Explica cómo la estadística laboral oficial tiene en cuenta la IA al proyectar el futuro de ocupaciones concretas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ilo-revolutionizing-health-safety-ai-2025",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "wellbeing",
+    "scope": "global",
+    "title": "Revolutionizing health and safety: The role of AI and digitalization at work",
+    "source": "International Labour Organization",
+    "year": 2025,
+    "url": "https://www.ilo.org/publications/revolutionizing-health-and-safety-role-ai-and-digitalization-work",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 198,
+    "why": {
+      "en": "It reviews how AI and automation can make work safer and which new risks they bring.",
+      "es": "Repasa cómo la IA y la automatización pueden hacer el trabajo más seguro y qué riesgos nuevos traen."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "stanford-hai-ai-index-2025",
+    "type": "report",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "us",
+    "title": "The 2025 AI Index Report",
+    "source": "Stanford Institute for Human-Centered Artificial Intelligence",
+    "year": 2025,
+    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 1143,
+    "why": {
+      "en": "It is a broad annual reference on the state of AI, with chapters on the economy, education and policy that you can read separately.",
+      "es": "Es una referencia anual amplia sobre el estado de la IA, con capítulos sobre economía, educación y políticas que se pueden leer por separado."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ifow-pissarides-review-final-report-2025",
+    "type": "report",
+    "level": "advanced",
+    "topic": "wellbeing",
+    "scope": "uk",
+    "title": "The Final Report of the Pissarides Review",
+    "source": "Institute for the Future of Work",
+    "year": 2025,
+    "url": "https://www.ifow.org/publications/the-final-report-of-the-pissarides-review",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 483,
+    "why": {
+      "en": "It studies how automation and AI affect the quality of work and wellbeing, and what makes the outcome better or worse.",
+      "es": "Estudia cómo afectan la automatización y la IA a la calidad del trabajo y al bienestar, y qué hace que el resultado sea mejor o peor."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "wef-future-of-jobs-report-2025",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "jobs",
+    "scope": "global",
+    "title": "The Future of Jobs Report 2025",
+    "source": "World Economic Forum",
+    "year": 2025,
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 725,
+    "why": {
+      "en": "It shows which skills and roles employers expect to grow or shrink in the coming years.",
+      "es": "Muestra qué competencias y puestos esperan las empresas que crezcan o disminuyan en los próximos años."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "eprs-addressing-ai-risks-workplace-2024",
+    "type": "report",
+    "level": "introductory",
+    "topic": "rights",
+    "scope": "eu",
+    "title": "Addressing AI risks in the workplace: Workers and algorithms",
+    "source": "European Parliament, European Parliamentary Research Service",
+    "year": 2024,
+    "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2024)762323",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 20,
+    "why": {
+      "en": "A compact briefing on the European rules that protect workers when algorithms make or support decisions.",
+      "es": "Un informe compacto sobre las normas europeas que protegen a las personas trabajadoras cuando los algoritmos toman o apoyan decisiones."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ico-ai-tools-in-recruitment-audit-2024",
+    "type": "report",
+    "level": "advanced",
+    "topic": "fairness",
+    "scope": "uk",
+    "title": "AI tools in recruitment: Audit outcomes report",
+    "source": "Information Commissioner's Office",
+    "year": 2024,
+    "url": "https://ico.org.uk/media2/migrated/4031620/ai-in-recruitment-outcomes-report.pdf",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 125,
+    "why": {
+      "en": "It reports what the data protection regulator found when it examined AI tools used to screen job applicants.",
+      "es": "Cuenta lo que encontró la autoridad de protección de datos al examinar herramientas de IA usadas para filtrar candidaturas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ilo-algorithmic-management-regular-workplaces-2024",
+    "type": "report",
+    "level": "advanced",
+    "topic": "rights",
+    "scope": "global",
+    "title": "Algorithmic Management practices in regular workplaces: case studies in logistics and healthcare",
+    "source": "International Labour Organization",
+    "year": 2024,
+    "url": "https://www.ilo.org/publications/algorithmic-management-practices-regular-workplaces-case-studies-logistics",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 183,
+    "why": {
+      "en": "Case studies from warehouses and hospitals on how algorithmic management changes daily work and labour relations.",
+      "es": "Estudios de caso en almacenes y hospitales sobre cómo la gestión algorítmica cambia el trabajo diario y las relaciones laborales."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "imf-genai-future-of-work-2024",
+    "type": "report",
+    "level": "advanced",
+    "topic": "jobs",
+    "scope": "global",
+    "title": "Gen-AI: Artificial Intelligence and the Future of Work",
+    "source": "International Monetary Fund",
+    "year": 2024,
+    "url": "https://www.imf.org/en/publications/staff-discussion-notes/issues/2024/01/14/gen-ai-artificial-intelligence-and-the-future-of-work-542379",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 105,
+    "why": {
+      "en": "It examines which workers and countries are most exposed to AI and which policies could soften the impact.",
+      "es": "Examina qué personas trabajadoras y qué países están más expuestos a la IA y qué políticas podrían amortiguar el impacto."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "brookings-generative-ai-american-worker-2024",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "rights",
+    "scope": "us",
+    "title": "Generative AI, the American worker, and the future of work",
+    "source": "Brookings Institution",
+    "year": 2024,
+    "url": "https://www.brookings.edu/articles/generative-ai-the-american-worker-and-the-future-of-work/",
+    "format": "web",
+    "language": "en",
+    "minutes": 37,
+    "why": {
+      "en": "It argues that workers should have a say in how generative AI is introduced and discusses the tools to make that happen.",
+      "es": "Defiende que las personas trabajadoras tengan voz en cómo se introduce la IA generativa y repasa las herramientas para lograrlo."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "un-governing-ai-for-humanity-2024",
+    "type": "report",
+    "level": "advanced",
+    "topic": "policy",
+    "scope": "global",
+    "title": "Governing AI for Humanity - Final Report",
+    "source": "United Nations, High-level Advisory Body on Artificial Intelligence",
+    "year": 2024,
+    "url": "https://www.un.org/sites/un2.un.org/files/governing_ai_for_humanity_final_report_en.pdf",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 253,
+    "why": {
+      "en": "It sets out the United Nations proposals for governing AI internationally, including its effects on people.",
+      "es": "Expone las propuestas de Naciones Unidas para gobernar la IA a escala internacional, incluidos sus efectos en las personas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ilo-mind-the-ai-divide-2024",
+    "type": "report",
+    "level": "introductory",
+    "topic": "policy",
+    "scope": "global",
+    "title": "Mind the AI Divide: Shaping a Global Perspective on the Future of Work",
+    "source": "International Labour Organization",
+    "year": 2024,
+    "url": "https://www.ilo.org/publications/mind-ai-divide-shaping-global-perspective-future-work",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 60,
+    "why": {
+      "en": "It explains why the benefits of AI at work risk staying in richer countries and what could close that gap.",
+      "es": "Explica por qué los beneficios de la IA en el trabajo pueden quedarse en los países ricos y qué podría cerrar esa brecha."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "nber-rapid-adoption-generative-ai-2024",
+    "type": "report",
+    "level": "advanced",
+    "topic": "learning",
+    "scope": "us",
+    "title": "The Rapid Adoption of Generative AI",
+    "source": "National Bureau of Economic Research",
+    "year": 2024,
+    "url": "https://www.nber.org/papers/w32966",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 115,
+    "why": {
+      "en": "It measures how many people already use generative AI at work and at home, and for which tasks, which helps you compare your own habits.",
+      "es": "Mide cuánta gente usa ya la IA generativa en el trabajo y en casa, y para qué tareas, lo que te permite comparar tus propios hábitos."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "ippr-transformed-by-ai-2024",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "jobs",
+    "scope": "uk",
+    "title": "Transformed by AI: How generative artificial intelligence could affect work in the UK – and how to manage it",
+    "source": "Institute for Public Policy Research",
+    "year": 2024,
+    "url": "https://www.ippr.org/articles/transformed-by-ai",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 110,
+    "why": {
+      "en": "It looks at which tasks generative AI could take over and compares possible futures depending on the policies chosen.",
+      "es": "Analiza qué tareas podría asumir la IA generativa y compara futuros posibles según las políticas que se elijan."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "euosha-worker-management-through-ai-2024",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "wellbeing",
+    "scope": "eu",
+    "title": "Worker management through AI - From technology development to the impacts on workers and their safety and health",
+    "source": "European Agency for Safety and Health at Work",
+    "year": 2024,
+    "url": "https://osha.europa.eu/en/publications/worker-management-through-ai-technology-development-impacts-workers-and-their-safety-and-health",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 63,
+    "why": {
+      "en": "It follows AI management tools from their design to their effects on stress, workload and safety.",
+      "es": "Sigue las herramientas de gestión con IA desde su diseño hasta sus efectos en el estrés, la carga de trabajo y la seguridad."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "euosha-worker-participation-ai-worker-management-2024",
+    "type": "report",
+    "level": "advanced",
+    "topic": "wellbeing",
+    "scope": "eu",
+    "title": "Worker participation and representation: the impact on risk prevention of AI worker management systems",
+    "source": "European Agency for Safety and Health at Work",
+    "year": 2024,
+    "url": "https://osha.europa.eu/en/publications/worker-participation-and-representation-impact-risk-prevention-ai-worker-management-systems",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 80,
+    "why": {
+      "en": "It shows why involving workers when AI management systems are introduced helps prevent health risks.",
+      "es": "Muestra por qué contar con la plantilla al implantar sistemas de gestión con IA ayuda a prevenir riesgos para la salud."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "pew-ai-hiring-evaluating-workers-2023",
+    "type": "report",
+    "level": "intermediate",
+    "topic": "fairness",
+    "scope": "us",
+    "title": "AI in Hiring and Evaluating Workers: What Americans Think",
+    "source": "Pew Research Center",
+    "year": 2023,
+    "url": "https://www.pewresearch.org/internet/2023/04/20/ai-in-hiring-and-evaluating-workers-what-americans-think/",
+    "format": "web",
+    "language": "en",
+    "minutes": 20,
+    "why": {
+      "en": "It gathers public views on letting AI screen candidates or monitor staff, a useful starting point if you face such systems at work.",
+      "es": "Recoge la opinión de la población sobre dejar que la IA filtre candidaturas o vigile al personal, un buen punto de partida si te encuentras con estos sistemas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "euosha-ai-worker-management-overview-2022",
+    "type": "report",
+    "level": "advanced",
+    "topic": "wellbeing",
+    "scope": "eu",
+    "title": "Artificial intelligence for worker management: an overview",
+    "source": "European Agency for Safety and Health at Work",
+    "year": 2022,
+    "url": "https://osha.europa.eu/en/publications/artificial-intelligence-worker-management-overview",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 250,
+    "why": {
+      "en": "It maps how AI is used to manage workers in Europe and what that means for their health.",
+      "es": "Describe cómo se usa la IA para dirigir a las personas trabajadoras en Europa y qué supone para su salud."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "nist-bias-in-ai-standard-2022",
+    "type": "report",
+    "level": "advanced",
+    "topic": "fairness",
+    "scope": "us",
+    "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+    "source": "National Institute of Standards and Technology",
+    "year": 2022,
+    "url": "https://www.nist.gov/publications/towards-standard-identifying-and-managing-bias-artificial-intelligence",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 215,
+    "why": {
+      "en": "It explains where bias in AI comes from, beyond the data, and why it matters when these systems are used to make decisions about people.",
+      "es": "Explica de dónde nacen los sesgos de la IA, más allá de los datos, y por qué importan cuando estos sistemas se usan para decidir sobre personas."
+    },
+    "checkedOn": "2026-11-12"
+  },
+  {
+    "id": "eige-ai-platform-work-gender-equality-2021",
+    "type": "report",
+    "level": "introductory",
+    "topic": "fairness",
+    "scope": "eu",
+    "title": "Artificial intelligence, platform work and gender equality",
+    "source": "European Institute for Gender Equality",
+    "year": 2021,
+    "url": "https://eige.europa.eu/publications-resources/publications/artificial-intelligence-platform-work-and-gender-equality",
+    "format": "pdf",
+    "language": "en",
+    "minutes": 20,
+    "why": {
+      "en": "It explains how AI and platform work can widen or narrow the gaps between women and men at work.",
+      "es": "Explica cómo la IA y el trabajo en plataformas pueden ampliar o reducir las diferencias entre mujeres y hombres en el empleo."
+    },
+    "checkedOn": "2026-11-12"
+  }
+]

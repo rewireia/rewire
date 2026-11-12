@@ -1,0 +1,94 @@
+.card {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  padding: clamp(20px, 3vw, 36px);
+}
+.card summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.card summary::-webkit-details-marker {
+  display: none;
+}
+.card summary::after {
+  content: '';
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+}
+.card[open] summary::after {
+  transform: rotate(225deg);
+}
+.card summary:focus:not(:focus-visible) {
+  outline: none;
+}
+.card summary:focus-visible {
+  outline-offset: 8px;
+}
+.card summary h2 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 500;
+  line-height: 1.35;
+}
+.text {
+  display: grid;
+  gap: 20px;
+  max-width: 78ch;
+  margin: 24px auto 0;
+  font-size: clamp(1.05rem, 1.4vw, 1.18rem);
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.reference {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  white-space: normal;
+}
+
+.note {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+.mentioned {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.mentioned ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.figure {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  white-space: normal;
+}
+
+.mentioned li {
+  scroll-margin-top: 110px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--sunken);
+}

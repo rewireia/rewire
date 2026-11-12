@@ -1,0 +1,111 @@
+.view {
+  display: grid;
+  gap: 20px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px 32px;
+}
+
+.filter {
+  display: grid;
+  gap: 8px;
+  flex: 1 1 280px;
+  max-width: 420px;
+}
+
+.filter input {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.groups {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.groupList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  font-size: 0.94rem;
+}
+
+.groupList label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.groupList input {
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+}
+
+.count {
+  color: var(--ink-2);
+  font-size: 0.94rem;
+}
+
+.histogram {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.grid {
+  height: 640px;
+  border-top: 1px solid var(--line);
+}
+
+/* `mine` is the row class the table gives the person's own occupation. */
+.grid :global(.mine)::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--accent);
+  z-index: 1;
+}
+
+.title {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.2em;
+}
+
+.title:hover {
+  text-decoration-color: var(--ink);
+}
+
+.exposure {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+}
+
+.points {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  min-width: 2ch;
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    height: 70vh;
+  }
+}

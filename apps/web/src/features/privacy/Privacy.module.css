@@ -1,0 +1,5 @@
+.text {
+  max-width: var(--measure);
+  color: var(--ink-2);
+  line-height: 1.6;
+}

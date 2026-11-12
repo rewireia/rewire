@@ -1,0 +1,254 @@
+[
+  {
+    "text": "The score for checking records [T1] is 100 out of 100.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Your exposure is 999999 percent.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Ninety-nine percent of your job will disappear.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "El setenta por ciento de tus tareas está expuesto.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "About half of your week goes to these tasks.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "It ranks second among the occupations of its group.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "This is the third most exposed task [T3].",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Es la segunda tarea más expuesta [T2].",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "You spend one hour a week on it.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Dedicas una hora a la semana a esta tarea.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "Twenty tasks make up the report.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Hay doce tareas en tu informe.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "It scores 54/100.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "The course costs fifty euros.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "The plan ends in March.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "El plan termina en junio.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "You can start next week.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Empiezas el mes que viene.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "Your score is twice the average.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Es el doble de la media.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "Ten of your tasks are highly exposed.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "It is in the top ten.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Two thirds of your week are spent on them.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Over a dozen courses are free.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "It costs 12 €.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Your week scores 61.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "Está en el puesto 3 de 427.",
+    "lang": "es",
+    "expect": "figure"
+  },
+  {
+    "text": "Your plan ends on Friday.",
+    "lang": "en",
+    "expect": "figure"
+  },
+  {
+    "text": "One of the most exposed tasks is checking records [T1].",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "Uno de los aspectos más expuestos es revisar registros [T1].",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "Una tarea destaca: revisar registros [T1].",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "Una de las tareas más expuestas es revisar registros [T1].",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "Your most exposed task is checking records [T1], and the least is meeting clients [T4].",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "In a normal week, you spend most of your time on these tasks.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "En una semana normal, dedicas la mayor parte del tiempo a estas tareas.",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "Ten en cuenta que la puntuación mide potencial técnico.",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "Once you start the first course, the plan follows you.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "At one point, the tasks of the week change.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "Desde un punto de vista técnico, la IA puede ayudar.",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "This may change how you work.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "The first course is free.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "Double-checking invoices is among the least exposed [T5].",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "Las tareas más expuestas van primero.",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "You do this task once a week.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "You act on behalf of your team.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "Many of your tasks are highly exposed, a few are not.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "The second step of the plan holds a paid course.",
+    "lang": "en",
+    "expect": "none"
+  },
+  {
+    "text": "Un día cualquiera, revisas registros e informes.",
+    "lang": "es",
+    "expect": "none"
+  },
+  {
+    "text": "A couple of tasks stand out.",
+    "lang": "en",
+    "expect": "figure",
+    "limit": "\"A couple\" is not in the list of quantities."
+  },
+  {
+    "text": "One day, AI may do this task.",
+    "lang": "en",
+    "expect": "none",
+    "limit": "\"One day\" is read as a quantity of days."
+  }
+]

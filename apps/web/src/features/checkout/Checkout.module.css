@@ -1,0 +1,22 @@
+.checkout {
+  display: grid;
+  gap: 16px;
+  max-width: 420px;
+}
+
+.buttons {
+  display: grid;
+  gap: 10px;
+}
+
+.notice {
+  display: grid;
+  gap: 6px;
+  padding: 4px 0 4px 16px;
+  border-left: 2px solid var(--accent);
+}
+
+.small {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}

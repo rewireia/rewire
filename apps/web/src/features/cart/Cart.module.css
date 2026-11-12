@@ -1,0 +1,283 @@
+.hero {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  padding: clamp(28px, 5vw, 48px);
+  border-radius: var(--radius-card);
+}
+
+.hero h1 {
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.eyebrow,
+.provider {
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.lede {
+  color: var(--ink-2);
+}
+
+.empty {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  padding: clamp(28px, 4vw, 44px);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+/* The courses on the left; the summary and the ways to pay beside them, kept in view. */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+  align-items: start;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.sectionTitle {
+  font-family: var(--font-text);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.sectionTitle span {
+  margin-left: 6px;
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.lines {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  padding: 24px 28px;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.lines ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.lineText {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.lineText h3 {
+  font-family: var(--font-text);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.hours {
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.seller {
+  color: var(--ink-2);
+  font-size: 0.8rem;
+}
+
+.lineNote {
+  margin-top: 4px;
+  color: var(--warn);
+  font-size: 0.875rem;
+}
+
+.lineEnd {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+  flex: none;
+}
+
+.linePrice {
+  color: var(--brass);
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.remove {
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+.remove:hover {
+  color: var(--error);
+}
+
+.summary {
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.row,
+.total {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.row {
+  color: var(--ink-2);
+}
+
+.total {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 1.25rem;
+}
+
+.total strong:last-child {
+  color: var(--brass);
+  font-weight: 500;
+}
+
+.note {
+  color: var(--ink-2);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.server {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--sunken);
+  font-size: 0.875rem;
+}
+
+.differs {
+  display: block;
+  margin-top: 4px;
+  color: var(--warn);
+}
+
+/* What the seller's offer takes off the order, in its violet. */
+.saving {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.sandbox {
+  padding: 10px 14px;
+  border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent);
+  border-radius: 10px;
+  color: var(--brass);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.nothing {
+  color: var(--ink-2);
+}
+
+/* The demo sign-in, at the scale of the summary; its dialog keeps its own size. */
+.access {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.access > section {
+  gap: 12px;
+  padding: 8px 0 0;
+}
+
+.access > section > svg {
+  width: 32px;
+  height: 32px;
+}
+
+.access > section > h2 {
+  font-family: var(--font-text);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.access > section > p {
+  font-size: 0.9rem;
+}
+
+/* The ways to pay, one under the other. */
+.methods {
+  display: grid;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.methods h3 {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .summary {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .lines {
+    padding: 20px;
+  }
+
+  .summary {
+    padding: 20px;
+  }
+}

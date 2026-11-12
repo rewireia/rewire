@@ -1,0 +1,15 @@
+.notice {
+  border-left: 2px solid var(--error);
+  padding: 4px 0 4px 16px;
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.detail {
+  color: var(--ink-2);
+}

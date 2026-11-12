@@ -1,0 +1,8 @@
+dist/
+coverage/
+package-lock.json
+THIRD_PARTY_NOTICES.md
+packages/data/bundle/
+packages/data/.cache/
+test-results/
+playwright-report/

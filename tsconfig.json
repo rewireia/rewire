@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/data" },
+    { "path": "packages/engine" },
+    { "path": "packages/content" },
+    { "path": "packages/contracts" },
+    { "path": "apps/api" }
+  ]
+}

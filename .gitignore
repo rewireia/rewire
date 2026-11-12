@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+.envrc
+!.env.example
+.DS_Store
+test-results/
+playwright-report/
+
+# Downloaded source files: rebuilt by `npm run data:build`, never committed.
+packages/data/.cache/
+
+# Local database.
+apps/api/var/

@@ -1,0 +1,52 @@
+# Render blueprint: one web service that answers the API and serves the built web.
+# See docs/deployment.md.
+services:
+  - type: web
+    name: rewire
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    # Render gives the service its public address; a PUBLIC_ORIGIN set by hand wins, for a
+    # domain of your own. The free instance has 512 MB and the server holds its data bundle
+    # in memory, so its heap is capped; the cap is set here and not as a variable, which
+    # the build would inherit.
+    startCommand: >-
+      PUBLIC_ORIGIN="${PUBLIC_ORIGIN:-$RENDER_EXTERNAL_URL}"
+      NODE_OPTIONS=--max-old-space-size=256
+      npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.11.0
+      - key: APP_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: WEB_ROOT
+        value: ../web/dist
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: PAYPAL_ENV
+        value: sandbox
+      # Entered in the dashboard, never committed.
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
+      # Fictional buyer credentials displayed in the sandbox demo checkout.
+      - key: PAYPAL_SANDBOX_DEMO_BUYER_EMAIL
+        sync: false
+      - key: PAYPAL_SANDBOX_DEMO_BUYER_PASSWORD
+        sync: false
+      # The AI guide's key.
+      - key: OPENAI_API_KEY
+        sync: false
+      # `true` unless the provider's account is known not to learn from what it receives: the
+      # privacy page then says so.
+      - key: GUIDE_PROVIDER_TRAINS_ON_DATA
+        value: 'true'
+      # Read when the web is built. Without it AG Studio runs as a watermarked trial.
+      - key: VITE_AG_STUDIO_LICENCE_KEY
+        sync: false

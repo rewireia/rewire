@@ -1,0 +1,38 @@
+.figure {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  margin: 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  transition: opacity var(--duration) var(--ease-out);
+}
+
+.value[data-updating='true'] {
+  opacity: 0.55;
+}
+
+.sentence {
+  color: var(--ink-2);
+  font-size: 0.94rem;
+  max-width: 34ch;
+}

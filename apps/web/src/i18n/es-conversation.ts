@@ -1,0 +1,40 @@
+export const conversationEs = {
+  'conversation.rex.social.greeting': '¡Hola! ¿A qué te dedicas?',
+  'conversation.rex.social.thanks': '¡De nada! Cuéntame qué haces en tu trabajo.',
+  'conversation.rex.social.help': 'Cuéntame sobre tu trabajo y lo exploraremos juntos.',
+  'conversation.rex.social.identity': 'Soy Rex, la IA de Rewire. ¿A qué te dedicas?',
+  'conversation.rex.social.outOfScope':
+    'Puedo ayudarte a explorar tu trabajo y tu formación. ¿A qué te dedicas?',
+  'conversation.rex.typing': 'Rex está escribiendo…',
+  'conversation.rex.subtitle': 'Tu guía en Rewire',
+  'conversation.rex.greeting': '¡Hola! Soy Rex, la IA de Rewire 😉 ¿A qué te dedicas?',
+  'conversation.rex.placeholder': 'Cuéntale a Rex sobre tu trabajo…',
+  'conversation.rex.previous': 'Tus propuestas de ocupación anteriores.',
+  'conversation.send': 'Enviar',
+  'conversation.progress': 'Tu recorrido',
+  'conversation.stage.work': 'Tu trabajo',
+  'conversation.stage.occupation': 'Ocupación',
+  'conversation.stage.tasks': 'Tus tareas',
+  'conversation.stage.report': 'Tu informe',
+  'conversation.stage.training': 'Formación',
+  'conversation.work.label': '¿A qué te dedicas?',
+  'conversation.results.title': '¿Qué ocupación encaja con tu trabajo?',
+  'conversation.results.none': 'Cuéntame qué haces en tu trabajo.',
+  'conversation.search.label': 'Buscar por nombre de puesto',
+  'conversation.search.hint':
+    'También puedes buscar por nombre de puesto en la clasificación oficial.',
+  'conversation.search.empty': 'No hay resultados. Prueba otro nombre.',
+  'conversation.back': 'Volver',
+  'conversation.tasks.title': '¿Qué tareas forman parte de tu trabajo?',
+  'conversation.tasks.body':
+    'Selecciona las tareas que haces y cuánto tiempo dedicas a cada una. Las no seleccionadas quedan fuera del cálculo.',
+  'conversation.tasks.time': 'Tiempo dedicado a {task}',
+  'conversation.tasks.group': 'Grupo oficial de tareas',
+  'conversation.tasks.none': 'Selecciona al menos una tarea para continuar.',
+  'conversation.tasks.extra': '¿Hay otra tarea importante en tu trabajo?',
+  'conversation.tasks.extraNote':
+    'La tarea que añadas aquí no tiene valoración disponible. No se incluye en el cálculo ni se guarda.',
+  'conversation.tasks.report': 'Ver mi informe',
+  'conversation.tasks.unavailable':
+    'Esta ocupación no tiene un grupo de tareas valorado disponible. Elige otra ocupación.',
+} as const;

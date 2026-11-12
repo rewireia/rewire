@@ -1,0 +1,22 @@
+{
+  "name": "@rewire/content",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Editorial content written for Rewire: region profiles, the demo course catalogue and the free courses it links to.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "rewire-source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@rewire/data": "0.1.0",
+    "zod": "4.6.7"
+  }
+}

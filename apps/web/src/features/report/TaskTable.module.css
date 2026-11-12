@@ -1,0 +1,131 @@
+.table {
+  display: grid;
+  gap: 16px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px 32px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.bands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.bands legend {
+  float: left;
+  margin-right: 8px;
+}
+
+.bands label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  font-size: 0.94rem;
+  cursor: pointer;
+}
+
+.bands input {
+  accent-color: var(--accent);
+}
+
+[data-band='high'] {
+  --band: var(--band-high);
+}
+
+[data-band='medium'] {
+  --band: var(--band-medium);
+}
+
+[data-band='low'] {
+  --band: var(--band-low);
+}
+
+[data-band='very-low'] {
+  --band: var(--band-very-low);
+}
+
+.swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 1px;
+  background: var(--band);
+}
+
+.grid {
+  min-width: 0;
+  border-top: 1px solid var(--line);
+}
+
+/*
+ * AG Grid's documented cell classes: no theme parameter centres a cell's content vertically or
+ * sets the leading of wrapped text, which rows as tall as their text need.
+ */
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+}
+
+.grid :global(.ag-cell-wrap-text) {
+  line-height: 1.45;
+  padding-block: 12px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  width: 100%;
+  line-height: 1.2;
+  padding-block: 6px;
+}
+
+.scoreHeading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 0.84rem;
+}
+
+.track {
+  display: block;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--sunken);
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--band);
+}
+
+.points {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  min-width: 2ch;
+  text-align: right;
+}

@@ -1,0 +1,40 @@
+.standalone {
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(var(--content) + 2 * var(--gutter));
+  min-height: var(--header-height);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-brand);
+  font-size: 0.95rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.card {
+  display: grid;
+  gap: 18px;
+  justify-items: start;
+  padding: clamp(28px, 4vw, 56px);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.card h1 {
+  max-width: 24ch;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

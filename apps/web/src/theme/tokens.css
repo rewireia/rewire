@@ -1,0 +1,75 @@
+/*
+ * Design tokens of the art direction. Components read only these properties.
+ * Each colour holds its light and its dark value; `color-scheme` picks one: the system's
+ * by default, or the theme the person chose. A part of the page that is always dark (a navy
+ * panel, the cover photograph) sets `color-scheme: dark` and reads the same tokens.
+ */
+
+/* Registered, so the navy of the panels resolves with the page's theme, not the panel's. */
+@property --navy {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #10202d;
+}
+
+:root {
+  color-scheme: light dark;
+  --paper: light-dark(#f2ece2, #171e28);
+  --sunken: light-dark(#e9e1d5, #202a36);
+  --surface: light-dark(#fcf8f1, #222d3a);
+  --ink: light-dark(#302c29, #f0ece5);
+  --ink-2: light-dark(#6b6259, #b7bdc6);
+  --line: light-dark(#d9d0c3, #3a4655);
+  --field-line: light-dark(#938576, #7e8c9e);
+  --accent: light-dark(#644294, #c7b2f0);
+  --accent-soft: light-dark(#e9e0f0, #373149);
+  --accent-ink: light-dark(#ffffff, #271c3c);
+  --navy: light-dark(#263342, #202c3a);
+  --brass: light-dark(#78603b, #d6bea0);
+  --done: light-dark(#2e7d4f, #7fd1a0);
+  --warn: light-dark(#9a6700, #e3b341);
+  --error: light-dark(#b42318, #ff8f85);
+  --band-very-low: light-dark(#27845b, #73c99c);
+  --band-low: light-dark(#bd941d, #e6c75d);
+  --band-medium: light-dark(#ca702d, #eea363);
+  --band-high: light-dark(#c24e49, #ee8b83);
+  --chart-line: light-dark(rgb(21 32 42 / 6%), rgb(232 238 243 / 6%));
+  --shadow: 0 5px 25px light-dark(rgb(16 32 45 / 6%), rgb(0 0 0 / 14%));
+  --shadow-panel: 0 10px 40px light-dark(rgb(16 32 45 / 14%), rgb(0 0 0 / 38%));
+  --veil: light-dark(rgb(44 37 29 / 22%), rgb(8 12 18 / 34%));
+
+  /* Text on the cover photograph does not change with the theme. */
+  --photo-fallback: #151a20;
+  --on-photo: #e1e5e8;
+
+  --font-brand: 'Sora', 'Space Grotesk', system-ui, sans-serif;
+  --font-display: 'Sora', system-ui, sans-serif;
+  --font-text: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --radius: 10px;
+  --radius-card: 18px;
+  --radius-chip: 6px;
+  --content: 1160px;
+  --measure: 760px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --header-height: 80px;
+  /* The side margin of the header and the menu, wider than the page's on a wide screen. */
+  --edge: clamp(14px, 2.2vw, 32px);
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration: 220ms;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-height: 64px;
+  }
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}

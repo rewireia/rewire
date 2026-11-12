@@ -1,0 +1,216 @@
+{
+  "formatVersion": 1,
+  "files": [
+    {
+      "file": "exposure.json",
+      "sha256": "82d89f50bf290f3fbb3d3f7953dad6661ef3ce4489eced015f0b739623ebeed6",
+      "bytes": 751380,
+      "sources": [
+        "ilo-genai-exposure"
+      ]
+    },
+    {
+      "file": "exposure-rationales.json",
+      "sha256": "12152c5ffaf883db393f1dc8d582ee334f9274d291ae53fae8662d805f83f815",
+      "bytes": 8599785,
+      "sources": [
+        "ilo-genai-exposure"
+      ]
+    },
+    {
+      "file": "classification.eu.json",
+      "sha256": "f5e283519f2b593b9984261e0c6cf6e9fe5c5dc9670a2541ceaf4659e2c5829b",
+      "bytes": 6639503,
+      "sources": [
+        "esco-occupations"
+      ]
+    },
+    {
+      "file": "classification.us.json",
+      "sha256": "8ad329620409b8395d9f5c54752fdaf028957b3fd05bbcf392872591b94c339e",
+      "bytes": 3132390,
+      "sources": [
+        "onet-database",
+        "esco-onet-crosswalk",
+        "esco-occupations"
+      ]
+    },
+    {
+      "file": "classification.uk.json",
+      "sha256": "08ae05d5b466980716aeac3dc4e54a5f7ddf2304dfb47d296f77dd2b13e1b3cd",
+      "bytes": 2431024,
+      "sources": [
+        "ons-soc2020-coding-index"
+      ]
+    },
+    {
+      "file": "labour.eu.json",
+      "sha256": "aae6b4d9fa2a5e73d05454ab73fba76234abcfa4c9cadd17cd7ce23e08addcc0",
+      "bytes": 3544,
+      "sources": [
+        "eurostat-lfsa-egai2d",
+        "eurostat-earn-ses22-48"
+      ]
+    },
+    {
+      "file": "labour.us.json",
+      "sha256": "450ccd1c44c6cfcc810713da159b1fa063087329dff95199a6160f6c4d788e48",
+      "bytes": 27221,
+      "sources": [
+        "bls-oews"
+      ]
+    },
+    {
+      "file": "labour.uk.json",
+      "sha256": "fb4b9329915fc204f37ca5161663ad08e51795def74e5e9d7944bbadc691e39d",
+      "bytes": 10452,
+      "sources": [
+        "ons-aps-employment",
+        "ons-ashe-table-14"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ilo-genai-exposure",
+      "title": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+      "publisher": "International Labour Organization",
+      "version": "ILO Working Paper 140 (2025)",
+      "url": "https://github.com/pgmyrek/2025_GenAI_scores_ISCO08",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "attribution": "Gmyrek, P., Berg, J., Kamiński, K., Konopczyński, F., Ładna, A., Nafradi, B., Rosłaniec, K., Troszyński, M. 2025. Generative AI and Jobs: A Refined Global Index of Occupational Exposure. ILO Working Paper 140. Geneva: International Labour Office. © ILO. https://doi.org/10.54394/HETP0387",
+      "adaptationNotice": "This is an adaptation of a copyrighted work of the International Labour Organization (ILO). This adaptation has not been prepared, reviewed or endorsed by the ILO and should not be considered an official ILO adaptation. The ILO disclaims all responsibility for its content and accuracy. Responsibility rests solely with the author(s) of the adaptation.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "c1940b87e7293b1eb95b530b6d3da7cd806b61d217c4bff1e69372b2cff5c90a"
+    },
+    {
+      "id": "esco-occupations",
+      "title": "ESCO: European Skills, Competences, Qualifications and Occupations",
+      "publisher": "European Commission",
+      "version": "v1.2.1",
+      "url": "https://esco.ec.europa.eu/en/use-esco/download",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://commission.europa.eu/legal-notice_en"
+      },
+      "attribution": "This service uses the ESCO classification of the European Commission.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "20d937df3e4e17dae9e790003f016759629452119962e92b253fd4f670b8eb0f"
+    },
+    {
+      "id": "onet-database",
+      "title": "O*NET 31.0 Database",
+      "publisher": "U.S. Department of Labor, Employment and Training Administration",
+      "version": "31.0",
+      "url": "https://www.onetcenter.org/database.html",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://www.onetcenter.org/license_db.html"
+      },
+      "attribution": "This service includes information from the O*NET 31.0 Database by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. O*NET® is a trademark of USDOL/ETA. Rewire has modified all or some of this information. USDOL/ETA has not approved, endorsed, or tested these modifications.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "c1cbd3f993e5567640bd18665131cf7be2384addf4d40e2e9130934877827fc7"
+    },
+    {
+      "id": "esco-onet-crosswalk",
+      "title": "ESCO–O*NET Crosswalk (occupations)",
+      "publisher": "European Commission, ESCO Secretariat, with the U.S. Department of Labor, Employment and Training Administration",
+      "version": "Version 1 (September 2022)",
+      "url": "https://esco.ec.europa.eu/en/use-esco/other-crosswalks",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://commission.europa.eu/legal-notice_en"
+      },
+      "attribution": "ESCO–O*NET Crosswalk, © European Union, with the U.S. Department of Labor, Employment and Training Administration.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "82179a0a3340da97b63df90134d8d941ec3c2c478334d855b69e4dd57a91b620"
+    },
+    {
+      "id": "ons-soc2020-coding-index",
+      "title": "SOC 2020 Volume 2: the coding index",
+      "publisher": "Office for National Statistics",
+      "version": "Version 14 (27 August 2026)",
+      "url": "https://www.ons.gov.uk/methodology/classificationsandstandards/standardoccupationalclassificationsoc/soc2020/soc2020volume2codingrulesandconventions",
+      "licence": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "attribution": "Source: Office for National Statistics. Contains public sector information licensed under the Open Government Licence v3.0.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "78086561111bafa21b63eca3bc176f4505110015aeb37919dc2912788368cde0"
+    },
+    {
+      "id": "bls-oews",
+      "title": "Occupational Employment and Wage Statistics: national estimates",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "version": "May 2025",
+      "url": "https://www.bls.gov/oes/tables.htm",
+      "licence": {
+        "name": "Public domain (U.S. Government work)",
+        "url": "https://www.bls.gov/opub/copyright-information.htm"
+      },
+      "attribution": "Source: U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics, May 2025",
+      "retrievedOn": "2026-11-11",
+      "sha256": "b5855a37f3e03e779f6fbf173d3bbc94aeeff33426aef32fa95ce6d025bab1af"
+    },
+    {
+      "id": "ons-aps-employment",
+      "title": "Annual Population Survey: employment by occupation (SOC 2020 unit groups)",
+      "publisher": "Office for National Statistics",
+      "version": "July 2025 to June 2026",
+      "url": "https://www.nomisweb.co.uk/datasets/apsnew",
+      "licence": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "attribution": "Source: Office for National Statistics, Annual Population Survey, via Nomis. Contains public sector information licensed under the Open Government Licence v3.0.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "9e836c5b237b138521f7d4934ffd72c3a5dd2b5cdc18e8d44eef455d17115bb8"
+    },
+    {
+      "id": "ons-ashe-table-14",
+      "title": "Annual Survey of Hours and Earnings: occupation by four-digit SOC 2020 (table 14)",
+      "publisher": "Office for National Statistics",
+      "version": "2026 provisional",
+      "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ashetable14",
+      "licence": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "attribution": "Source: Office for National Statistics, Annual Survey of Hours and Earnings. Contains public sector information licensed under the Open Government Licence v3.0.",
+      "retrievedOn": "2026-11-11",
+      "sha256": "4719f364d596739679d1bb492a1fc42e4c8e980a5b93ffc791e350f4ba8f4f1d"
+    },
+    {
+      "id": "eurostat-lfsa-egai2d",
+      "title": "Employed persons by detailed occupation (ISCO-08 two digit level)",
+      "publisher": "Eurostat",
+      "version": "lfsa_egai2d, 2025",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_egai2d/default/table",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://ec.europa.eu/eurostat/web/main/help/copyright-notice"
+      },
+      "attribution": "Source: Eurostat (lfsa_egai2d)",
+      "retrievedOn": "2026-11-11",
+      "sha256": "181450c938b1a374c0b40705fda17ba185204de1a04f1668bfe0bdcc5afdf3a2"
+    },
+    {
+      "id": "eurostat-earn-ses22-48",
+      "title": "Mean monthly earnings by sex, occupation and economic activity (2022)",
+      "publisher": "Eurostat",
+      "version": "earn_ses22_48, Structure of Earnings Survey 2022",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/earn_ses22_48/default/table",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://ec.europa.eu/eurostat/web/main/help/copyright-notice"
+      },
+      "attribution": "Source: Eurostat (earn_ses22_48)",
+      "retrievedOn": "2026-11-11",
+      "sha256": "2079f5b462f8893c077d1e944977c7e4580f2f2e606e325b5a7d994fc08b3924"
+    }
+  ]
+}

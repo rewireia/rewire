@@ -1,0 +1,71 @@
+/* A price on offer: the brass price, the list price struck through and a violet tag. */
+.offer {
+  display: grid;
+  gap: 4px;
+  justify-items: start;
+}
+
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.amount {
+  color: var(--brass);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.list {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+  text-decoration-thickness: 1px;
+}
+
+.tag {
+  align-self: center;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.until {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+
+/* In a line of the cart the price sits at the end, smaller. */
+.line {
+  justify-items: end;
+  text-align: end;
+}
+
+.line .figures {
+  justify-content: flex-end;
+}
+
+.line .amount {
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.line .list {
+  font-size: 0.85rem;
+}

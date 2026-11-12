@@ -1,0 +1,215 @@
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.small {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(220px, 1fr);
+  gap: 32px 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.headText {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.filter {
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+}
+
+.filter input {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.sandbox {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--brass);
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.grid {
+  border-top: 1px solid var(--line);
+}
+
+/*
+ * AG Grid's documented cell classes: no theme parameter centres a cell's content vertically or
+ * sets the leading of wrapped text, which rows as tall as their text need.
+ */
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+}
+
+.grid :global(.ag-cell-wrap-text) {
+  line-height: 1.45;
+  padding-block: 12px;
+}
+
+/* A live region kept on the page while it has nothing to say, outside the section's rhythm. */
+.status:empty {
+  position: absolute;
+}
+
+.empty {
+  padding: 4px 0 4px 16px;
+  border-left: 2px solid var(--accent);
+  color: var(--ink-2);
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.bar {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 40px;
+  height: 6px;
+  border-radius: 1px;
+  background: var(--sunken);
+  overflow: hidden;
+}
+
+.bar span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--done);
+}
+
+.actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.action {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: start;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+.action:disabled {
+  color: var(--ink-2);
+  cursor: wait;
+}
+
+.dialog {
+  max-width: min(520px, calc(100vw - 32px));
+  padding: 0;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-panel);
+}
+
+.dialog::backdrop {
+  background: var(--veil);
+  backdrop-filter: blur(1px);
+}
+
+.dialogBody {
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+}
+
+@media (max-width: 760px) {
+  .head {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .bar {
+    display: none;
+  }
+}
+
+.dashboardPage {
+  gap: 24px;
+}
+.dashboardIntro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 28px;
+}
+.dashboardIntro h1 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 0;
+  border-top: 0;
+}
+.head h2 {
+  font-size: 1.35rem;
+}
+.links {
+  padding-top: 0;
+}
+@media (max-width: 640px) {
+  .head {
+    align-items: start;
+    flex-direction: column;
+  }
+  .dashboardIntro {
+    padding: 20px;
+  }
+}
+.dashboardIntro > div {
+  flex: none;
+}
+.dashboardIntro button {
+  white-space: nowrap;
+}

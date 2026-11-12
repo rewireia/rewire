@@ -1,0 +1,70 @@
+.welcome {
+  position: absolute;
+  z-index: 1;
+  top: max(170px, 46svh);
+  left: 50%;
+  transform: translate(-50%, -35%);
+  width: min(760px, calc(100% - 48px));
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  color: #f5f2ed;
+  text-align: center;
+  text-shadow: 0 2px 24px rgb(0 0 0 / 35%);
+  animation: welcome 1600ms ease-in-out both;
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d6d4e3;
+}
+
+.welcome h2 {
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5.4vw, 4.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.welcome h2:focus {
+  outline: none;
+}
+
+.body {
+  max-width: 43ch;
+  color: #e1dfe9;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.6;
+}
+
+.welcome a {
+  min-width: 172px;
+  margin-top: 8px;
+  background: #f5f2ed;
+  color: #292434;
+  border-color: #f5f2ed;
+  text-shadow: none;
+}
+
+.welcome a:hover {
+  background: #e8e0f3;
+  border-color: #e8e0f3;
+}
+
+@keyframes welcome {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome {
+    animation: none;
+  }
+}

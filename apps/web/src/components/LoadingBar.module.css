@@ -1,0 +1,35 @@
+.track {
+  height: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  width: 92%;
+  background: var(--accent);
+  transform-origin: left;
+  animation: fill 4s var(--ease-out) forwards;
+}
+
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fill {
+    animation: none;
+    width: 50%;
+  }
+}
+
+.label {
+  margin-top: 8px;
+  color: var(--ink-2);
+  font-size: 0.875rem;
+}

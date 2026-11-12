@@ -1,0 +1,32 @@
+{
+  "name": "@rewire/data",
+  "version": "0.1.0",
+  "private": true,
+  "description": "From official sources to the verified data bundle Rewire ships.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "rewire-source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./schema": {
+      "rewire-source": "./src/schema/index.ts",
+      "types": "./dist/schema/index.d.ts",
+      "default": "./dist/schema/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bundle"
+  ],
+  "dependencies": {
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "csv-parse": "7.0.3",
+    "fflate": "0.8.3",
+    "read-excel-file": "9.3.14"
+  }
+}

@@ -1,0 +1,100 @@
+.panel {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+.panel h3 {
+  font-size: 1.2rem;
+}
+.panel p {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+.eyebrow {
+  font: 500 0.7rem var(--font-mono);
+  letter-spacing: 0.1em;
+  color: var(--ink-2);
+}
+.item,
+.item label {
+  display: grid;
+  gap: 6px;
+}
+.item label {
+  font-size: 0.85rem;
+}
+.control {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.control input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  color: var(--ink);
+  background: var(--surface);
+  font: inherit;
+}
+.status {
+  color: var(--ink-2);
+  font-size: 0.8rem;
+}
+.status:empty {
+  display: none;
+}
+@media (max-width: 480px) {
+  .control {
+    flex-wrap: wrap;
+  }
+  .control input {
+    flex: 1 0 100%;
+  }
+}
+
+.prepare {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--sunken);
+}
+.openAccess {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  color: var(--accent-ink);
+  background: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+}
+.accessPage {
+  max-width: 680px;
+  padding-top: 40px;
+}
+
+.compact {
+  display: grid;
+  gap: 8px;
+  font-size: 0.85rem;
+  padding: 16px;
+  background: var(--paper);
+  border-radius: 10px;
+}
+.compact p {
+  margin: 0;
+  color: var(--ink-2);
+}
+.compact a {
+  color: var(--accent);
+  text-underline-offset: 4px;
+}

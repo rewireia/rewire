@@ -1,0 +1,23 @@
+{
+  "name": "@rewire/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rewire API: occupations, exposure reports, learning, payments and the AI guide.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --conditions=rewire-source --env-file-if-exists=../../.env src/main.ts",
+    "start": "node --env-file-if-exists=../../.env dist/main.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "2.1.6",
+    "@libsql/client": "0.18.0",
+    "@paypal/paypal-server-sdk": "2.5.0",
+    "@rewire/content": "0.1.0",
+    "@rewire/contracts": "0.1.0",
+    "@rewire/data": "0.1.0",
+    "@rewire/engine": "0.1.0",
+    "hono": "4.13.17",
+    "zod": "4.6.7"
+  }
+}

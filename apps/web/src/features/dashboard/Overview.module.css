@@ -1,0 +1,608 @@
+/* The general panel: pieces of different weight on one grid, from the greeting down. */
+.overview {
+  --stage-learn: light-dark(#1f6f99, #7dbfe6);
+
+  display: grid;
+  gap: 28px;
+  min-width: 0;
+}
+
+.eyebrow,
+.heroEyebrow {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* Greeting: a navy panel, always dark, with a rule in the four colours of the path. */
+.hero {
+  color-scheme: dark;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 28px 40px;
+  padding: clamp(28px, 4vw, 48px) clamp(24px, 4vw, 48px) clamp(32px, 4vw, 52px);
+  border-radius: var(--radius-card);
+  background: var(--navy);
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0 25%,
+    var(--brass) 25% 50%,
+    var(--stage-learn) 50% 75%,
+    var(--done) 75% 100%
+  );
+}
+
+.hero h1 {
+  margin: 12px 0 14px;
+  font-size: clamp(2rem, 4.2vw, 3.3rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.heroWho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 16px;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.heroCode {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--brass);
+}
+
+.heroRegion {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.heroSide {
+  display: grid;
+  justify-items: end;
+  gap: 24px;
+}
+
+.quick {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 10px;
+}
+
+.quickLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid color-mix(in srgb, var(--ink) 28%, transparent);
+  border-radius: 999px;
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out);
+}
+
+.quickLink:hover {
+  border-color: var(--ink);
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  text-decoration: none;
+}
+
+.quickLink[data-primary] {
+  border-color: transparent;
+  background: #ffffff;
+  color: #1b2430;
+}
+
+.quickLink[data-primary]:hover {
+  background: #e9edf2;
+}
+
+.quickLink:focus-visible {
+  outline-color: #ffffff;
+}
+
+.quickArrow {
+  display: inline-grid;
+  margin-right: -4px;
+  transition: transform 200ms var(--ease-out);
+}
+
+.quickLink:hover .quickArrow {
+  transform: translateX(3px);
+}
+
+/* Cards share one surface, radius and shadow; their weight comes from their place. */
+.card,
+.gauges,
+.wallet,
+.forYou {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  min-width: 0;
+  padding: clamp(22px, 2.6vw, 32px);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.cardHead {
+  display: grid;
+  gap: 6px;
+}
+
+.cardHead h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+/* Gauges beside the wallet: the gauges take two thirds. */
+.glance {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.gauges {
+  grid-template-rows: auto 1fr;
+}
+
+.gaugeRow {
+  display: grid;
+  align-content: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+
+/* The gauge cards sit flat in the panel, parted by fine rules. */
+.gaugeRow > figure {
+  padding: 4px 20px 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.gaugeRow > figure + figure {
+  border-left: 1px solid var(--line);
+}
+
+/* Wallet */
+.wallet {
+  gap: 18px;
+  border-top: 4px solid var(--accent);
+}
+
+.balance {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.balance span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+
+.balance span::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.balance strong {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.split {
+  display: flex;
+  gap: 3px;
+  height: 10px;
+}
+
+.split > span {
+  min-width: 0;
+  border-radius: 999px;
+}
+
+.split [data-part='spent'],
+.walletNumbers [data-part='spent'] dt::before {
+  background: var(--brass);
+}
+
+.split [data-part='available'],
+.balance span::before {
+  background: var(--accent);
+}
+
+.walletNumbers [data-part='funded'] dt::before {
+  display: none;
+}
+
+.walletNumbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 0;
+}
+
+.walletNumbers dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+
+.walletNumbers dt::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.walletNumbers dd {
+  margin: 2px 0 0;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+}
+
+.movements {
+  display: grid;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.movements h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.walletFoot {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+}
+
+.sandbox {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--brass);
+}
+
+/* Lines of money: the course or the movement, its day and the amount. */
+.lines {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.line:last-child {
+  border-bottom: 0;
+}
+
+.movements .line {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.lineText {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.lineText > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lineMeta {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+}
+
+.line strong {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.line[data-sign='in'] strong {
+  color: var(--done);
+}
+
+.line[data-outcome='failed'] strong {
+  color: var(--ink-2);
+  text-decoration: line-through;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--done);
+}
+
+.line[data-outcome='waiting'] .dot {
+  background: var(--warn);
+}
+
+.line[data-outcome='failed'] .dot {
+  background: var(--error);
+}
+
+.quiet {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.more {
+  justify-self: start;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+/* Courses and activity side by side. */
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.emptyBlock {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--sunken);
+}
+
+.emptyBlock p {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.courseList {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.courseRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px auto;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.courseRow:last-child {
+  border-bottom: 0;
+}
+
+.courseText {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.courseTitle {
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.courseTitle:hover {
+  color: var(--accent);
+}
+
+.courseMeta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+}
+
+.progress {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--sunken);
+  overflow: hidden;
+}
+
+.progress > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--stage-learn);
+}
+
+.courseRow[data-status='completed'] .progress > span {
+  background: var(--done);
+}
+
+.rowAction {
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Readings for the region. */
+.forYou .cardHead {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+}
+
+.forYou .cardHead .eyebrow,
+.forYou .cardHead h2 {
+  grid-column: 1;
+}
+
+.forYou .cardHead .more {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+}
+
+.readings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.readings li {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 4px 24px;
+}
+
+.readings li:first-child {
+  padding-left: 0;
+}
+
+.readings li + li {
+  border-left: 1px solid var(--line);
+}
+
+.readings a {
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.readings a:hover {
+  color: var(--accent);
+}
+
+.readingWhy {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+@media (max-width: 1100px) {
+  .glance,
+  .pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .heroSide {
+    justify-items: start;
+  }
+
+  .quick {
+    justify-content: start;
+  }
+
+  /* A row of gauges that slides inside its own box. */
+  .gaugeRow {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(236px, 78%);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-inline: -8px;
+    padding-bottom: 6px;
+  }
+
+  .gaugeRow > figure {
+    scroll-snap-align: start;
+    padding-inline: 12px;
+  }
+
+  .readings {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .readings li,
+  .readings li:first-child {
+    padding: 16px 0;
+  }
+
+  .readings li + li {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .courseRow {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .progress {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}

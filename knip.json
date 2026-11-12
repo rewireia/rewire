@@ -1,0 +1,26 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "workspaces": {
+    ".": {
+      "entry": ["tools/*.ts", "tools/tests/**/*.test.ts", "tests/e2e/**/*.spec.ts"]
+    },
+    "packages/data": {
+      "entry": ["tests/**/*.test.ts"]
+    },
+    "packages/engine": {
+      "entry": ["tests/**/*.test.ts"]
+    },
+    "packages/content": {
+      "entry": ["tests/**/*.test.ts"]
+    },
+    "packages/contracts": {
+      "entry": ["tests/**/*.test.ts"]
+    },
+    "apps/api": {
+      "entry": ["tests/**/*.test.ts"]
+    },
+    "apps/web": {
+      "entry": ["tests/**/*.test.ts"]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.focus {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  height: 100%;
+  padding: 2px 4px;
+  overflow: hidden;
+  font-family: var(--font-text);
+  color: var(--ink);
+}
+
+.head {
+  display: grid;
+  gap: 2px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.figure {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.points {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  color: var(--ink);
+}
+
+.tasks {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 1fr 3ch;
+  gap: 2px 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.task > :last-child {
+  grid-column: 1 / -1;
+}
+
+.score {
+  font-family: var(--font-mono);
+  text-align: right;
+}
+
+.taskText {
+  min-width: 0;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.foot a {
+  font-family: var(--font-text);
+  font-size: 0.94rem;
+  color: var(--ink);
+}
+
+.note {
+  margin: 0;
+  padding: 8px 4px;
+  color: var(--ink-2);
+}

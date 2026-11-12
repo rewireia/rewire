@@ -1,0 +1,103 @@
+.card {
+  position: fixed;
+  z-index: 1;
+  top: 50dvh;
+  left: 50%;
+  max-height: 80dvh;
+  overflow: auto;
+  transform: translate(-50%, -45%);
+  width: min(380px, calc(100% - 40px));
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid rgb(224 205 255 / 18%);
+  border-radius: 18px;
+  background: rgb(22 24 38 / 86%);
+  color: #f7f3fc;
+  backdrop-filter: blur(24px);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 28%);
+}
+.heading {
+  display: grid;
+  gap: 8px;
+}
+.heading h2 {
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+.heading p,
+.card small {
+  color: #c5bdce;
+  line-height: 1.5;
+}
+.card small {
+  font-size: 0.75rem;
+}
+.fields {
+  display: grid;
+  gap: 12px;
+}
+.fields label {
+  display: grid;
+  gap: 7px;
+  color: #d8cfe0;
+  font-size: 0.8rem;
+}
+.fields input {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid rgb(224 205 255 / 26%);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: rgb(255 255 255 / 5%);
+  color: #f7f3fc;
+  font: inherit;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 34px;
+  color: #e9e0f3;
+  font-size: 0.9rem;
+}
+.check {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #78c99b;
+  color: #132b20;
+}
+.check svg {
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 420px) {
+  .card {
+    gap: 16px;
+    padding: 24px;
+  }
+}
+
+/* Match the confirmation hold and fade in DemoEntry's completion delay. */
+.card[data-confirmed='true'] {
+  animation: depart 900ms ease-in-out 1200ms both;
+}
+
+@keyframes depart {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card[data-confirmed='true'] {
+    animation: none;
+  }
+}

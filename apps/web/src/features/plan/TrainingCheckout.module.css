@@ -1,0 +1,144 @@
+.checkout {
+  display: grid;
+  gap: 28px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.header span {
+  font: 0.75rem var(--font-mono);
+  color: var(--ink-2);
+  letter-spacing: 0.1em;
+}
+.header h2 {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  margin-top: 10px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(310px, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.order,
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: clamp(20px, 3vw, 32px);
+}
+.order > h3,
+.summary > h3 {
+  font-size: 1.2rem;
+  margin: 0 0 24px;
+}
+.order > h3 span {
+  margin-left: 8px;
+  border-radius: 6px;
+  background: var(--paper);
+  font-size: 0.85rem;
+  padding: 4px 8px;
+}
+.course {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.cover {
+  width: 70px;
+  height: 86px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: white;
+  flex-shrink: 0;
+}
+.cover svg {
+  width: 44px;
+}
+.course > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.course h4 {
+  font-size: 1.02rem;
+  line-height: 1.45;
+  margin: 8px 0;
+}
+.course p,
+.date,
+.note {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.date {
+  text-transform: capitalize;
+}
+.course > strong {
+  white-space: nowrap;
+}
+.delivery {
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+}
+.delivery p {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.summary {
+  display: grid;
+  gap: 20px;
+}
+.summary > h3 {
+  margin: 0;
+}
+.line,
+.total {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.line {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+.total {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  font-size: 1.5rem;
+}
+.summary :global(paypal-button),
+.summary :global(paypal-pay-later-button) {
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    align-items: start;
+    flex-direction: column;
+  }
+  .cover {
+    width: 46px;
+    height: 62px;
+  }
+  .cover svg {
+    width: 32px;
+  }
+  .course {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}

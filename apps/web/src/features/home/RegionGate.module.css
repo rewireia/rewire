@@ -1,0 +1,116 @@
+:global(html):has(.gate[open]) {
+  overflow: hidden;
+}
+.gate {
+  position: fixed;
+  inset: 0;
+  width: min(340px, calc(100% - 40px));
+  max-width: none;
+  max-height: calc(100svh - 40px);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid rgb(224 205 255 / 18%);
+  border-radius: 18px;
+  color-scheme: dark;
+  background: rgb(22 24 38 / 82%);
+  backdrop-filter: blur(24px);
+  color: #f7f3fc;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 28%);
+  animation: arrive 500ms var(--ease-out) both;
+}
+.gate::backdrop {
+  background: rgb(5 7 15 / 18%);
+  animation: arrive 500ms var(--ease-out) both;
+}
+.gate[data-leaving='true'],
+.gate[data-leaving='true']::backdrop {
+  animation: depart 500ms var(--ease-out) both;
+}
+.inner {
+  padding: 28px;
+}
+.eyebrow {
+  color: #cdb9ed;
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.title {
+  margin: 9px 0 22px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 15px;
+  border: 1px solid rgb(229 217 250 / 14%);
+  border-radius: 12px;
+  background: rgb(255 255 255 / 4%);
+  color: #f7f3fc;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color 180ms var(--ease-out),
+    border-color 180ms var(--ease-out);
+}
+.option:hover,
+.option:focus-visible {
+  border-color: #cdb9ed;
+  background: rgb(199 178 240 / 12%);
+}
+.option:focus-visible {
+  outline: 2px solid #e3d4fa;
+  outline-offset: 3px;
+}
+.option[data-selected='true'] {
+  border-color: #cdb9ed;
+  background: rgb(199 178 240 / 20%);
+}
+.indicator {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  border: 1px solid #c4b2db;
+  border-radius: 50%;
+}
+.option[data-selected='true'] .indicator {
+  border: 5px solid #cfbcf3;
+  background: #251d35;
+}
+@keyframes arrive {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes depart {
+  to {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gate,
+  .gate::backdrop,
+  .gate[data-leaving='true'],
+  .gate[data-leaving='true']::backdrop {
+    animation: none;
+  }
+  .option {
+    transition: none;
+  }
+}

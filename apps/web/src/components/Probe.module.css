@@ -1,0 +1,64 @@
+/* The task probe: a 0–100 line, ticks at 25/50/75, the model range and a dot on the score. */
+.probe {
+  --band: var(--band-medium);
+  position: relative;
+  width: 100%;
+  min-width: 56px;
+  height: 14px;
+}
+
+.probe[data-band='high'] {
+  --band: var(--band-high);
+}
+
+.probe[data-band='medium'] {
+  --band: var(--band-medium);
+}
+
+.probe[data-band='low'] {
+  --band: var(--band-low);
+}
+
+.probe[data-band='very-low'] {
+  --band: var(--band-very-low);
+}
+
+.line {
+  position: absolute;
+  inset: 6.5px 0 auto;
+  height: 1px;
+  background: var(--ink-2);
+  opacity: 0.55;
+}
+
+.tick {
+  position: absolute;
+  top: 3px;
+  width: 1px;
+  height: 8px;
+  background: var(--ink-2);
+  opacity: 0.55;
+}
+
+.range {
+  position: absolute;
+  top: 4px;
+  height: 6px;
+  left: calc(var(--low) * 100%);
+  width: calc((var(--high) - var(--low)) * 100%);
+  min-width: 2px;
+  background: var(--band);
+  opacity: 0.6;
+  border-radius: 1px;
+}
+
+.dot {
+  position: absolute;
+  top: 2px;
+  left: calc(var(--score) * 100% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--band);
+  box-shadow: 0 0 0 2px var(--surface);
+}

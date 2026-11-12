@@ -1,0 +1,202 @@
+.minutes {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* The reading column, with a quiet table of contents beside it on a wide screen. */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, var(--measure));
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.contents {
+  position: sticky;
+  top: calc(var(--header-height) + 32px);
+  display: grid;
+  gap: 12px;
+}
+
+.contentsTitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.contents ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+  border-left: 1px solid var(--line);
+}
+
+.contents a {
+  display: block;
+  padding: 8px 0 8px 16px;
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+  color: var(--ink-2);
+  font-size: 0.92rem;
+  line-height: 1.35;
+  text-decoration: none;
+  transition:
+    color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out);
+}
+
+.contents a:hover,
+.contents a:focus-visible {
+  border-left-color: var(--accent);
+  color: var(--ink);
+}
+
+.article {
+  display: grid;
+  gap: 56px;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.article section {
+  display: grid;
+  gap: 18px;
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.article h2 {
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.article p {
+  max-width: 68ch;
+}
+
+.article p a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+}
+
+.next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.figure {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  margin: 12px 0 0;
+  padding: clamp(20px, 3vw, 32px);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.diagram {
+  width: min(100%, 420px);
+  height: auto;
+  font-family: var(--font-text);
+}
+
+.caption {
+  max-width: 60ch;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+.box {
+  fill: var(--paper);
+  stroke: var(--line);
+}
+
+.model {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  fill: var(--ink-2);
+}
+
+.prompt {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  fill: var(--ink);
+}
+
+.modelName {
+  font-size: 17px;
+  font-weight: 500;
+  fill: var(--ink);
+}
+
+.modelNote,
+.word {
+  font-size: 13px;
+  fill: var(--ink-2);
+}
+
+.chosenText {
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--accent);
+}
+
+.bar {
+  fill: var(--line);
+}
+
+.barChosen {
+  fill: var(--accent);
+}
+
+.flow,
+.loop {
+  fill: none;
+  stroke: var(--ink-2);
+  stroke-width: 1.4;
+}
+
+.loop {
+  stroke: var(--accent);
+  stroke-dasharray: 4 4;
+}
+
+.arrowHead {
+  fill: none;
+  stroke: var(--ink-2);
+  stroke-width: 1.6;
+}
+
+.step {
+  font-size: 13px;
+  fill: var(--ink-2);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contents {
+    display: none;
+  }
+}

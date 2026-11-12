@@ -1,0 +1,514 @@
+/*
+ * Bryntum Gantt dressed in the tokens of Rewire. Same selector as the Svalbard theme and
+ * loaded after it, so these values win; every colour is a token, so light and dark follow the
+ * page.
+ */
+:root:not(.b-nothing) {
+  --b-primary: var(--accent);
+  --b-mix: var(--surface);
+  --b-opposite: var(--ink);
+  --b-widget-color: var(--ink);
+  --b-widget-border-color: var(--line);
+  --b-widget-border-radius: var(--radius);
+  --b-widget-border-radius-large: var(--radius-card);
+  --b-widget-font-size: 15px;
+  --b-widget-floating-box-shadow: var(--shadow-panel);
+  --b-panel-background: var(--surface);
+  --b-grid-background: var(--surface);
+  --b-grid-cell-background: var(--surface);
+  --b-grid-cell-color: var(--ink);
+  --b-grid-cell-hover-background: var(--sunken);
+  --b-grid-cell-selected-background: var(--sunken);
+  --b-grid-cell-hover-selected-background: var(--sunken);
+  --b-grid-cell-selected-color: var(--ink);
+  --b-grid-cell-border-color: var(--line);
+  --b-grid-row-border-color: var(--line);
+  --b-grid-header-background: var(--sunken);
+  --b-grid-header-hover-background: var(--surface);
+  --b-grid-header-color: var(--ink-2);
+  --b-grid-header-font-size: 12px;
+  --b-grid-header-font-weight: 500;
+  --b-grid-header-text-transform: none;
+  --b-grid-header-border-color: var(--line);
+  --b-grid-header-box-shadow: none;
+  --b-grid-splitter-color: var(--line);
+  --b-splitter-color: var(--line);
+  --b-tree-parent-font-weight: 500;
+  --b-column-lines-tick-color: var(--chart-line);
+  --b-column-lines-major-color: var(--line);
+  --b-dependency-color: var(--field-line);
+  --b-gantt-task-primary: var(--ink-2);
+  --b-gantt-parent-task-primary: var(--accent);
+  --b-gantt-task-border-radius: var(--radius-chip);
+  --b-gantt-task-box-shadow: none;
+  --b-gantt-task-font-size: 12px;
+  --b-tooltip-rich-background: var(--surface);
+  --b-tooltip-rich-color: var(--ink);
+  --b-tooltip-rich-border-radius: var(--radius);
+  --b-tooltip-color: var(--ink);
+  --b-tooltip-text-gap: 2px;
+  --b-popup-background: var(--surface);
+  --b-popup-border-radius: var(--radius);
+}
+
+.rewire-gantt {
+  /* The colours of the three stages, the same as the dashboard's learning path. */
+  --stage-understand: var(--accent);
+  --stage-apply: var(--brass);
+  --stage-strengthen: light-dark(#1f6f99, #7dbfe6);
+  /* Text on a solid bar: light on the deep colours of day, dark on the bright ones of night. */
+  --stage-ink: light-dark(#ffffff, #171e28);
+
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.rewire-gantt .b-gantt,
+.b-tooltip {
+  font-family: var(--font-text);
+}
+
+/* The time axis and the figures read as the rest of Rewire: dates and hours in Mono. */
+.rewire-gantt .b-sch-header-text,
+.rewire-gantt .rewire-hours {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+}
+
+.rewire-gantt .b-grid-header-text {
+  letter-spacing: 0.06em;
+}
+
+.rewire-gantt .b-grid-row {
+  transition: color var(--duration) var(--ease-out);
+}
+
+/* A course left out of the plan stays as a row, quieter, so it can be put back. */
+.rewire-gantt .b-grid-row.rewire-out .b-name-cell,
+.rewire-gantt .b-grid-row.rewire-out .rewire-hours {
+  color: var(--ink-2);
+  opacity: 0.7;
+}
+
+.rewire-gantt .b-name-cell .b-tree-cell-inner {
+  width: 100%;
+  min-width: 0;
+}
+
+.rewire-gantt .b-name-cell .b-tree-cell-value {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.rewire-gantt .b-name-cell a {
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  max-height: 60px;
+  color: inherit;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--line);
+}
+
+.rewire-gantt .b-name-cell a:hover {
+  text-decoration-color: currentcolor;
+}
+
+.rewire-gantt .rewire-stage-name {
+  font-weight: 500;
+}
+
+/* Bars: a free course is drawn in the colour of "Free"; a paid one is outlined and says "Demo". */
+.rewire-gantt .b-gantt-task.rewire-free,
+.rewire-gantt .b-gantt-task.rewire-paid {
+  --b-sch-event-border-width: 1px;
+  --b-sch-event-border-style: solid;
+  --b-sch-event-color: var(--ink);
+  overflow: visible;
+}
+
+.rewire-gantt .b-gantt-task.rewire-free {
+  --b-sch-event-background: color-mix(in srgb, var(--done) 16%, var(--surface));
+  --b-sch-event-border-color: var(--done);
+}
+
+.rewire-gantt .b-gantt-task.rewire-paid {
+  --b-sch-event-background: var(--accent-soft);
+  --b-sch-event-border-color: var(--accent);
+}
+
+/* A course the learner moved is pinned: a heavier edge where it may start. */
+.rewire-gantt .b-gantt-task.rewire-moved {
+  border-inline-start-width: 3px;
+  border-inline-start-color: var(--ink);
+}
+
+.rewire-gantt .b-gantt-task:not(.b-milestone) .b-gantt-task-content {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Real progress: the share of the course done, filled from its start, inside the bar. */
+.rewire-gantt .rewire-progress {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  background: color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+/* "Demo" and "Done" stand just before the bar, where its row is empty. */
+.rewire-gantt .rewire-bar-label {
+  position: absolute;
+  inset-inline-end: calc(100% + 8px);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink-2);
+}
+
+/* A stage spans its courses as a fine bracket, never dragged. */
+.rewire-gantt .b-gantt-task.rewire-stage {
+  --b-sch-event-background: var(--accent);
+}
+
+.b-tooltip .rewire-tip-title {
+  margin: 0 0 4px;
+  font-weight: 500;
+  max-width: 36ch;
+}
+
+.b-tooltip .rewire-tip-line {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+
+/* A course out of the plan has no days: Bryntum marks it unscheduled, and it has no bar. */
+.rewire-gantt .b-gantt-task-wrap.b-unscheduled {
+  display: none;
+}
+
+/* A course waiting for its payment: hatched, so it reads without colour. */
+.rewire-gantt .b-gantt-task.rewire-held {
+  --b-sch-event-border-style: dashed;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 4px,
+    color-mix(in srgb, var(--warn) 45%, transparent) 4px 5px
+  );
+}
+
+/* Payments and the end of the plan are milestones: hollow while not paid, filled once paid. */
+.rewire-gantt .b-gantt-task.b-milestone {
+  --b-sch-milestone-border-width: 1px;
+  --b-sch-event-border-width: 1px;
+  --b-sch-event-border-style: solid;
+  --b-sch-event-background: var(--surface);
+  /* The diamond's outline takes the colour of the text. */
+  --b-sch-event-color: var(--ink);
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-due,
+.rewire-gantt .b-gantt-task.rewire-payment-refunded {
+  --b-sch-event-color: var(--warn);
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-refunded {
+  --b-sch-event-border-style: dashed;
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-paid {
+  --b-sch-event-background: var(--done);
+  --b-sch-event-color: var(--done);
+}
+
+.rewire-gantt .b-gantt-task.rewire-finish {
+  --b-sch-event-background: var(--ink);
+}
+
+/* A payment says where it stands before its diamond, clear of its arrow; the end, after it. */
+.rewire-gantt .rewire-milestone-label {
+  position: absolute;
+  inset-inline-end: calc(100% + 6px);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink-2);
+}
+
+.rewire-gantt .rewire-finish .rewire-milestone-label {
+  inset-inline-start: calc(var(--b-milestone-size) + 8px);
+  inset-inline-end: auto;
+  color: var(--ink);
+}
+
+/* In the table: a payment reads as a line of the ledger; a stage says how much of it is done. */
+.rewire-gantt .rewire-payment-name {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.rewire-gantt .rewire-payment-status {
+  color: var(--ink-2);
+}
+
+.rewire-gantt .rewire-stage-done {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ink-2);
+}
+
+.rewire-gantt .rewire-finish-name {
+  font-weight: 500;
+}
+
+/* Today: a fine line in the header, in its week, at its day. */
+.rewire-gantt .rewire-today {
+  position: absolute;
+  inset-block: 0;
+  width: 2px;
+  margin-inline-start: -1px;
+  background: var(--accent);
+}
+
+.rewire-gantt .rewire-stage-row .b-grid-cell {
+  background: var(--sunken);
+  border-top: 1px solid var(--line);
+}
+
+.rewire-gantt .rewire-stage-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+}
+
+.rewire-gantt .rewire-payment-row .b-grid-cell {
+  background: color-mix(in srgb, var(--accent-soft) 30%, var(--surface));
+}
+
+.rewire-gantt .rewire-payment-name {
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*
+ * Each stage in its colour: its bracket, its row in the table and the bars of its courses.
+ * A bar is tinted with its stage, edged with it, and filled with it as the course advances.
+ */
+.rewire-gantt .rewire-stage-understand,
+.rewire-gantt .rewire-row-stage-understand {
+  --stage: var(--stage-understand);
+}
+
+.rewire-gantt .rewire-stage-apply,
+.rewire-gantt .rewire-row-stage-apply {
+  --stage: var(--stage-apply);
+}
+
+.rewire-gantt .rewire-stage-strengthen,
+.rewire-gantt .rewire-row-stage-strengthen {
+  --stage: var(--stage-strengthen);
+}
+
+.rewire-gantt .b-gantt-task.rewire-stage {
+  --b-sch-event-background: var(--stage);
+}
+
+.rewire-gantt .b-grid-subgrid-locked .b-grid-row.rewire-stage-row .b-grid-cell:first-child {
+  box-shadow: inset 4px 0 0 var(--stage);
+}
+
+.rewire-gantt .b-grid-row.rewire-stage-row .rewire-stage-name > span:first-child {
+  color: var(--stage);
+}
+
+.rewire-gantt .b-gantt-task.rewire-free,
+.rewire-gantt .b-gantt-task.rewire-paid {
+  --b-sch-event-background: var(--stage);
+  --b-sch-event-border-color: var(--stage);
+  --b-sch-event-color: var(--stage-ink);
+  --b-gantt-task-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* A free course at its provider is drawn lighter than a Rewire course (demo). */
+.rewire-gantt .b-gantt-task.rewire-free {
+  --b-sch-event-background: color-mix(in srgb, var(--stage) 70%, var(--surface));
+}
+
+/* The title of the course, inside its bar, cut where the bar ends. */
+.rewire-gantt .rewire-bar-title {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding-inline: 10px;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--stage-ink);
+}
+
+/* Real progress: a firm strip along the foot of the bar, from its start. */
+.rewire-gantt .rewire-progress {
+  inset-block: auto 0;
+  height: 5px;
+  border-radius: 0 0 0 7px;
+  background: var(--stage-ink);
+  opacity: 0.55;
+}
+
+.rewire-gantt .b-gantt-task.rewire-done {
+  box-shadow: inset 0 0 0 2px var(--stage-ink);
+}
+
+.rewire-gantt .rewire-bar-label {
+  font-size: 11px;
+  color: var(--ink);
+}
+
+/* Lanes: each stage's rows sit on a faint band of its colour. */
+.rewire-gantt .b-grid-row.rewire-stage-row {
+  background: color-mix(in srgb, var(--stage) 12%, var(--surface));
+}
+
+.rewire-gantt .b-grid-row.rewire-stage-row .b-grid-cell {
+  background: transparent;
+}
+
+/* Today, across the body of the chart, above the rows and under the tooltips. */
+.rewire-gantt {
+  position: relative;
+}
+
+.rewire-gantt .rewire-today-line {
+  position: absolute;
+  inset-block: 0;
+  z-index: 3;
+  width: 2px;
+  margin-inline-start: -1px;
+  background: var(--accent);
+  pointer-events: none;
+}
+
+/* The bars appear once, from their start; nothing moves again. */
+@media (prefers-reduced-motion: no-preference) {
+  .rewire-gantt .b-gantt-task-wrap:not(.b-milestone-wrap) .b-gantt-task {
+    animation: rewire-bar-in 420ms var(--ease-out) both;
+    transform-origin: left center;
+  }
+}
+
+@keyframes rewire-bar-in {
+  from {
+    transform: scaleX(0.2);
+    opacity: 0;
+  }
+}
+
+/* Payment diamonds, one look per state: to pay, under review, invoiced, paid, refunded. */
+.rewire-gantt .b-gantt-task.b-milestone {
+  --b-milestone-size: 18px;
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-due {
+  --b-sch-event-background: var(--surface);
+  --b-sch-event-color: var(--warn);
+  --b-sch-milestone-border-width: 2px;
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-held-by-paypal {
+  --b-sch-event-background: color-mix(in srgb, var(--warn) 45%, var(--surface));
+  --b-sch-event-color: var(--warn);
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-invoice-sent {
+  --b-sch-event-background: var(--accent-soft);
+  --b-sch-event-color: var(--accent);
+  --b-sch-event-border-style: dashed;
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-paid {
+  --b-sch-event-background: var(--done);
+  --b-sch-event-color: var(--done);
+}
+
+.rewire-gantt .b-gantt-task.rewire-payment-refunded {
+  --b-sch-event-background: var(--surface);
+  --b-sch-event-color: var(--ink-2);
+  --b-sch-event-border-style: dashed;
+}
+
+.rewire-gantt .rewire-milestone-label {
+  font-size: 11px;
+}
+
+/* Today: a firm mark in its week, with a dot at its foot. */
+.rewire-gantt .rewire-today {
+  width: 3px;
+  margin-inline-start: -1.5px;
+  border-radius: 2px;
+}
+
+.rewire-gantt .rewire-today::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -3.5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.rewire-gantt .rewire-today-week {
+  overflow: visible;
+}
+
+/* The tooltip: the title, then each line on its own, with room around them. */
+.b-tooltip .rewire-tip-title {
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: 15px;
+}
+
+.b-tooltip .rewire-tip-line {
+  padding: 2px 0;
+  line-height: 1.45;
+}
+
+/* Text of the table at reading size; the header of the axis in two clean levels. */
+.rewire-gantt .b-grid-cell {
+  font-size: 14px;
+}
+
+.rewire-gantt .b-sch-header-row-0 .b-sch-header-text {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}

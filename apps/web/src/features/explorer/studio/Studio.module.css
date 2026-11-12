@@ -1,0 +1,65 @@
+.view {
+  display: grid;
+  gap: 12px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.drill {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin: 0;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.privacy {
+  max-width: var(--measure);
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.94rem;
+}
+
+.lede {
+  max-width: var(--measure);
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.status {
+  min-height: 1.5em;
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.94rem;
+}
+
+/*
+ * Studio fills its box, as tall as the window: the canvas scrolls inside it, and the analyst's
+ * panel keeps its conversation and its field in view.
+ */
+.studio {
+  height: calc(100vh - 32px);
+  min-height: 720px;
+  scroll-margin-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.figure {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

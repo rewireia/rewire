@@ -1,0 +1,827 @@
+/* The seller workspace: a navy header, the summary in coloured figures, then one table. */
+
+.page {
+  gap: 28px;
+  padding-bottom: 72px;
+}
+
+/* The page header is a navy panel in both themes, as every main page opens. */
+.header {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  padding: clamp(28px, 4.4vw, 52px);
+  border-radius: var(--radius-card);
+  background: var(--navy);
+  color: #f3eee6;
+  box-shadow: var(--shadow);
+}
+
+.header h1 {
+  margin: 0;
+  color: #fbf8f3;
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.header p {
+  max-width: 64ch;
+  margin: 0;
+  color: rgb(243 238 230 / 78%);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: light-dark(#e2cfae, var(--brass));
+}
+
+.signOut {
+  position: absolute;
+  top: clamp(20px, 3vw, 36px);
+  right: clamp(20px, 3vw, 36px);
+}
+
+.card,
+.gaugeCard,
+.emptyCard,
+.workspace {
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.card {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  margin: 0;
+  padding: 24px;
+  min-width: 0;
+}
+
+.cardHead {
+  display: grid;
+  gap: 4px;
+}
+
+.cardHead h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.cardHead p,
+.source {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+
+.source {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+/* Summary */
+
+.summary {
+  display: grid;
+  gap: 20px;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(280px, 0.9fr);
+  gap: 16px;
+}
+
+.figure {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  margin: 0;
+  padding: 22px 20px 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+/* Each figure carries its colour as a rule along the top and in its label, never alone. */
+.figure::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--tone);
+}
+
+.figure[data-tone='good'] {
+  --tone: var(--done);
+}
+
+.figure[data-tone='accent'] {
+  --tone: var(--accent);
+}
+
+.figure[data-tone='error'] {
+  --tone: var(--error);
+}
+
+.figure[data-tone='brass'] {
+  --tone: var(--brass);
+}
+
+.figureLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.figureValue {
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+
+.figureNote {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.other {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.gaugeCard {
+  grid-row: 1 / span 2;
+  grid-column: 3;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.emptyCard {
+  grid-column: 1 / 3;
+  grid-row: 1 / span 2;
+  display: grid;
+  align-items: center;
+  margin: 0;
+  padding: 28px;
+  border-left: 4px solid var(--accent);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.insights {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1fr);
+  gap: 16px;
+}
+
+.top {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: best;
+}
+
+.top li {
+  display: grid;
+  gap: 4px;
+  padding-left: 34px;
+  position: relative;
+  counter-increment: best;
+}
+
+.top li::before {
+  content: counter(best, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.topTitle {
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.topMeta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.topBar {
+  display: block;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+  opacity: 0.75;
+}
+
+/* Workspace: the catalogue or the sales */
+
+.workspace {
+  display: grid;
+  gap: 20px;
+  padding: clamp(18px, 2.6vw, 28px);
+  min-width: 0;
+}
+
+.workspaceHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.workspaceHead h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  letter-spacing: -0.03em;
+}
+
+.view {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.viewHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.viewHead p {
+  max-width: 70ch;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px 20px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.field input,
+.field select,
+.field textarea {
+  min-height: 44px;
+  min-width: 0;
+  max-width: 100%;
+  padding: 8px 14px;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font: 400 15px/1.3 var(--font-text);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.field select {
+  max-width: 240px;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.search {
+  flex: 1 1 240px;
+  max-width: 360px;
+}
+
+/* Tables */
+
+.grid {
+  min-width: 0;
+}
+
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+}
+
+.courseCell {
+  display: grid;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.courseMeta {
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.saleTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+}
+
+.courseLink {
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.courseLink:hover {
+  text-decoration-color: var(--accent);
+}
+
+.figureCell {
+  font-variant-numeric: tabular-nums;
+}
+
+.editable {
+  color: var(--brass);
+  font-weight: 500;
+  cursor: text;
+}
+
+.referenceCell {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: var(--chip);
+  background: color-mix(in srgb, var(--chip) 13%, transparent);
+}
+
+.chip[data-tone='good'] {
+  --chip: var(--done);
+}
+
+.chip[data-tone='warn'] {
+  --chip: var(--warn);
+}
+
+.chip[data-tone='error'] {
+  --chip: var(--error);
+}
+
+.chip[data-tone='muted'] {
+  --chip: var(--ink-2);
+}
+
+/* Terms of one course */
+
+.terms {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--sunken);
+}
+
+.termsHead {
+  display: grid;
+  gap: 4px;
+}
+
+.termsHead h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.termsHead p,
+.termsNote {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.92rem;
+}
+
+.termsFields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 16px 20px;
+}
+
+.termsFields .field input {
+  width: 160px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+
+.check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+}
+
+.termsActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Sections of the workspace: pills in a row that wraps, the current one filled. */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 999px;
+  background: var(--sunken);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.tab {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-2);
+  font: 500 15px/1 var(--font-text);
+  cursor: pointer;
+  transition:
+    background-color 180ms var(--ease-out),
+    color 180ms var(--ease-out);
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tab[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow:
+    0 1px 2px light-dark(rgb(16 32 45 / 14%), rgb(0 0 0 / 40%)),
+    inset 0 0 0 1px var(--line);
+}
+
+.tab:focus-visible,
+.shortcut:focus-visible,
+.shopLink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Publishing a course */
+
+.publish {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 28px;
+  align-items: start;
+}
+
+.publishIntro {
+  grid-column: 1 / -1;
+  max-width: 70ch;
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+.publishField {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.publishField .field input,
+.publishField .field textarea {
+  width: 100%;
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.field [aria-invalid='true'] {
+  border-color: var(--error);
+}
+
+.fieldHint {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.85rem;
+}
+
+.fieldError {
+  margin: 0;
+  min-height: 1.2em;
+  color: var(--error);
+  font-size: 0.85rem;
+}
+
+.topics {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.topicChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.topicChip {
+  position: relative;
+  display: inline-flex;
+}
+
+.topicChip input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.topicChip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.9rem;
+  transition:
+    background-color 180ms var(--ease-out),
+    border-color 180ms var(--ease-out);
+}
+
+.topicChip input:checked + span {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.topicChip input:disabled + span {
+  opacity: 0.45;
+}
+
+.topicChip input:focus-visible + span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.published {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border-left: 4px solid var(--done);
+  border-radius: var(--radius);
+  background: var(--sunken);
+  font-size: 1.05rem;
+}
+
+.published p {
+  margin: 0;
+}
+
+.shopLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Discount beacons */
+
+.beaconForm {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+  border-left: 4px solid var(--warn);
+  border-radius: var(--radius);
+  background: var(--sunken);
+}
+
+.preview {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.shortcut {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: 500 13px/1 var(--font-mono);
+  cursor: pointer;
+}
+
+.shortcut:hover {
+  border-color: var(--accent);
+}
+
+.beacons {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.beacons li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab,
+  .topicChip span {
+    transition: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .figures {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gaugeCard,
+  .emptyCard {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .insights {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .signOut {
+    position: static;
+  }
+
+  .tabs {
+    border-radius: 22px;
+  }
+
+  .tab {
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .publish {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .workspace {
+    padding: 18px 12px;
+  }
+
+  .workspaceHead {
+    padding-inline: 6px;
+  }
+
+  /* The page arrows stay; the count of rows is already said above the table. */
+  .grid :global(.ag-paging-row-summary-panel) {
+    display: none;
+  }
+
+  .figure {
+    padding: 18px 16px 16px;
+  }
+
+  .search,
+  .field select {
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .filters > label {
+    flex: 1 1 100%;
+  }
+}

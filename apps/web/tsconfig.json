@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["es2024", "DOM", "DOM.Iterable"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "customConditions": ["rewire-source"],
+    "types": ["vite/client"],
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    // Vite types CSS Modules as an index signature, so class names are read with dot access.
+    "noPropertyAccessFromIndexSignature": false
+  },
+  "include": ["src", "tests", "vite.config.ts"]
+}

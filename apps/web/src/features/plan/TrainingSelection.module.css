@@ -1,0 +1,226 @@
+.flow {
+  display: grid;
+  gap: 28px;
+}
+.section {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+.section > p {
+  color: var(--ink-2);
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+  width: 100%;
+}
+.cardHead {
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+.cardHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+.tag {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.questions {
+  display: grid;
+  gap: 28px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+.progress {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.progress li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-2);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 16px;
+  font-size: 0.85rem;
+}
+.progress li[aria-current] {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.progress span {
+  font-family: var(--font-mono);
+}
+.fields {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  display: grid;
+  gap: 24px;
+}
+.fields legend {
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  margin-bottom: 24px;
+}
+.fields p {
+  color: var(--ink-2);
+}
+.amount {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  max-width: 360px;
+}
+.amount input {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  background: var(--paper);
+}
+.options label[data-selected='true'] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.goal {
+  display: grid;
+  gap: 12px;
+  max-width: 480px;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.resultIntro {
+  display: grid;
+  gap: 12px;
+}
+.resultIntro h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.choice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  cursor: pointer;
+}
+.choice[data-selected='true'] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.choice h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.choice p {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  flex: 1;
+}
+.month {
+  color: var(--accent);
+  text-transform: capitalize;
+}
+.price {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.select {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 32px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+}
+.basket > div {
+  display: grid;
+  gap: 8px;
+}
+.basket strong {
+  font-size: 1.8rem;
+}
+.notice {
+  padding: 16px 20px;
+  border-left: 3px solid var(--accent);
+  color: var(--ink-2);
+}
+@media (max-width: 600px) {
+  .progress li {
+    font-size: 0.75rem;
+    gap: 5px;
+  }
+  .basket {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .options label {
+    flex: 1;
+  }
+}
+
+.options input,
+.select input {
+  accent-color: var(--accent);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.goal {
+  border: 0;
+  padding: 0;
+  margin: 8px 0 0;
+  max-width: none;
+}
+.goal legend {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}

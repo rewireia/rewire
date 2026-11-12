@@ -1,0 +1,170 @@
+.gauge {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  margin: 0;
+  padding: 24px 24px 22px;
+  min-width: 0;
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.gauge {
+  --gauge-width: 280px;
+}
+
+.gauge[data-size='small'] {
+  --gauge-width: 200px;
+}
+
+.gauge[data-size='large'] {
+  --gauge-width: 340px;
+}
+
+.dial {
+  position: relative;
+  width: min(100%, var(--gauge-width));
+  margin: 4px auto 0;
+}
+
+.dial svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.track,
+.lit {
+  fill: none;
+  stroke-width: 14;
+}
+
+.track {
+  opacity: 0.3;
+}
+
+.reach {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 22;
+  stroke-dasharray: var(--gauge-fill) 100;
+  stroke-dashoffset: 0;
+  animation: gauge-reach 0.9s var(--ease-out) both;
+}
+
+.needle {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  transform-box: view-box;
+  transform-origin: 100px 100px;
+  transform: rotate(var(--gauge-turn));
+  animation: gauge-turn 0.9s var(--ease-out) both;
+}
+
+@keyframes gauge-reach {
+  from {
+    stroke-dashoffset: var(--gauge-fill);
+  }
+}
+
+@keyframes gauge-turn {
+  from {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reach,
+  .needle {
+    animation: none;
+  }
+}
+
+.reading {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.reading strong {
+  font-size: clamp(2.3rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.gauge[data-size='small'] .reading strong {
+  font-size: 2rem;
+}
+
+.reading span {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+
+.reading .none {
+  font-family: var(--font-text);
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, var(--gauge-width));
+  margin: -4px auto 0;
+  padding: 0 4px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-2);
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.swatch {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.empty {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+  color: var(--ink-2);
+}
+
+.note {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  text-align: center;
+}

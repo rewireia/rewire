@@ -1,0 +1,115 @@
+/*
+ * The seller's offer, told in two places: a quiet band above the catalogue and a notice in the
+ * dashboard. The discount is the figure; the words say what it takes off and until when.
+ */
+.band,
+.alert {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px 28px;
+  border-radius: var(--radius-card);
+  animation: offer-in 240ms var(--ease-out) both;
+}
+
+.band {
+  padding: 18px 20px 18px 28px;
+  background: var(--accent-soft);
+}
+
+.alert {
+  padding: 24px 28px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+@keyframes offer-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .band,
+  .alert {
+    animation: none;
+  }
+}
+
+/* The discount, large and violet, set apart from the words by a fine rule. */
+.figure {
+  padding-right: 28px;
+  border-right: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--accent);
+  font-family: var(--font-text);
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.words {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-text);
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.text {
+  min-width: 0;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.alert .text {
+  color: var(--ink-2);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .band,
+  .alert {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 14px 18px;
+    padding: 18px 20px;
+  }
+
+  .figure {
+    padding-right: 18px;
+  }
+
+  .band > :last-child,
+  .actions {
+    grid-column: 1 / -1;
+  }
+
+  .actions > * {
+    flex: 1 1 auto;
+  }
+}

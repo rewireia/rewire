@@ -1,0 +1,68 @@
+.shell {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.skip {
+  position: absolute;
+  left: 8px;
+  top: -64px;
+  z-index: 20;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.skip:focus {
+  top: 8px;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.main:focus {
+  outline: none;
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  margin-top: 96px;
+  padding: 28px var(--gutter) 36px;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+  text-align: center;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 20px;
+  font-size: 0.75rem;
+}
+
+.footerLinks a {
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.8125rem;
+}
+
+:global(body):has([data-home-scene][data-phase]) .footer,
+:global(body):has([data-home-scene][data-region-pending='true']) .footer {
+  visibility: hidden;
+}

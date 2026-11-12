@@ -1,0 +1,409 @@
+[
+  {
+    "text": "There is no doubt that you will lose your job. [T1]",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your employer will fire you. [T1]",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your exposure is 999999 percent and your job will disappear",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "You have a 100 percent chance of losing your job. [T1]",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your boss is going to let you go.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "AI will replace you.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "You'll be replaced by software before long.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your role is likely to disappear.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your position will soon be eliminated.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your company will lay you off.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "You are going to be made redundant.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Workers like you will be out of work.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "AI is coming for your job.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "The AI will steal your job.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your days in this job are numbered.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Without a doubt, you will be replaced.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "It is no secret that your job will disappear.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "This is not a guess: you will lose your job.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "It is not about skill, but you will lose your job.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Not only will your tasks change, you will lose your job.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your occupation will become obsolete.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Unemployment awaits you.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "You will no longer be needed.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your manager will show you the door.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "You might lose your job to AI.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Your job is at risk.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "Even if you retrain, you will be fired.",
+    "lang": "en",
+    "expect": "block"
+  },
+  {
+    "text": "No cabe duda de que perderás tu trabajo.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Tu empresa te despedirá.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Tu jefe te va a echar.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "La IA te sustituirá.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Serás reemplazado por una máquina.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Tu puesto va a desaparecer.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Tu empleo desaparecerá pronto.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Acabarás en el paro.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Te quedarás sin trabajo.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "La IA te quitará el puesto.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Sin duda, perderás tu empleo.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Tu profesión quedará obsoleta.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Ya no serás necesario en tu empresa.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Tu trabajo tiene los días contados.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "La IA ocupará tu puesto.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "Irás a la calle.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "No hay duda: tu puesto va a desaparecer.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "No solo cambiará tu trabajo: vas a perder tu empleo.",
+    "lang": "es",
+    "expect": "block"
+  },
+  {
+    "text": "You will not lose your job because of this score.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "A high score does not mean that you will lose your job.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "No one can say that your job will disappear.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "These scores describe technical potential, not job loss.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "Job loss is not what this score measures.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "AI could take over parts of your work, such as drafting reports [T2].",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "Parts of your job could be automated [T1].",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "AI can help you with checking records [T1].",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "You can learn new tasks without losing your job.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "If you lose your job, your learning plan is still yours.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "The score says nothing about whether you will be replaced.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "Will you lose your job? The score cannot tell you that.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "Your most exposed task is checking records [T1].",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "AI could replace some of your tasks.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "The guide can take you through each step of the plan.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "You cut the time spent on reports [T3].",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "AI will not replace you, but it may change how you work.",
+    "lang": "en",
+    "expect": "pass"
+  },
+  {
+    "text": "No vas a perder tu trabajo por esta puntuación.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Esta puntuación no significa que vayas a perder tu empleo.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Nadie puede decir que perderás tu trabajo.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Puedes aprender sin perder tu trabajo.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "La pérdida de empleo no es lo que mide esta puntuación.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Algunas tareas de tu puesto podrían automatizarse [T1].",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "La IA te echa una mano con los informes [T2].",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Tu puesto no desaparecerá por esta nota.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Si pierdes tu empleo, tu plan sigue siendo tuyo.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Las notas no dicen nada sobre perder tu trabajo.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "Miden el potencial técnico, nunca que vayas a perder tu empleo.",
+    "lang": "es",
+    "expect": "pass"
+  },
+  {
+    "text": "AI will replace accountants.",
+    "lang": "en",
+    "expect": "block",
+    "limit": "An occupation named by its title is not in the vocabulary of people: only you, workers, people, staff, employees and humans are."
+  },
+  {
+    "text": "Your employer won't need you anymore.",
+    "lang": "en",
+    "expect": "block",
+    "limit": "Said without the words of dismissal, replacement, disappearance or unemployment."
+  },
+  {
+    "text": "Pronto no tendrás a qué dedicarte.",
+    "lang": "es",
+    "expect": "block",
+    "limit": "Said without the words of dismissal, replacement, disappearance or unemployment."
+  },
+  {
+    "text": "Your job is safe from AI.",
+    "lang": "en",
+    "expect": "block",
+    "limit": "A reassurance is a forecast too, but it has no vocabulary of loss; a denied loss counts as denied."
+  },
+  {
+    "text": "You process redundancies and dismissals for the company [T2].",
+    "lang": "en",
+    "expect": "pass",
+    "limit": "A task about dismissals, as in human resources, uses the vocabulary of a dismissal."
+  },
+  {
+    "text": "Gestionas los despidos de la plantilla [T2].",
+    "lang": "es",
+    "expect": "pass",
+    "limit": "A task about dismissals, as in human resources, uses the vocabulary of a dismissal."
+  },
+  {
+    "text": "Unemployment figures are not part of this report.",
+    "lang": "en",
+    "expect": "pass",
+    "limit": "A denial counts after the claim only when its verb comes right after it."
+  }
+]
